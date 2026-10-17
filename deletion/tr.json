@@ -1,0 +1,23 @@
+{
+  "deleteTitle": "Budgetory hesabınızı silin",
+  "deleteByline": "Budgetory, Uğurcan Eser'in kişisel bütçe uygulaması",
+  "deleteIntro": "Budgetory hesabınızı ve tüm verilerini istediğiniz zaman, uygulamadan ya da e-postayla silebilirsiniz.",
+  "deleteInAppTitle": "Uygulamada",
+  "deleteStep1": "Budgetory'yi açın ve giriş yapın.",
+  "deleteStep2": "Ayarlar'a dokunun.",
+  "deleteStep3": "Hesap bölümünde Hesabı Sil'e dokunun.",
+  "deleteStep4": "Şifrenizi girin ve Hesabı Sil'e dokunun.",
+  "deleteInAppDone": "Hesabınız ve verileri hemen silinir, oturumunuz da kapatılır.",
+  "deleteEmailTitle": "E-postayla, uygulama olmadan",
+  "deleteEmail": "Hesabınızın e-posta adresinden ugurcaneser@icloud.com adresine yazın ve Budgetory hesabınızı silmemizi isteyin. Hesabınızı 30 gün içinde siler ve bunu size e-postayla teyit ederiz. Başka bir adresten yazarsanız hesabın size ait olduğunu doğrulamanızı isteyebiliriz.",
+  "deleteDeletedTitle": "Neler silinir",
+  "deleteDeletedFirebase": "Firebase Authentication'daki oturum açma hesabınız: adınız, e-posta adresiniz ve şifreniz.",
+  "deleteDeletedServer": "Sunucumuzda hesabınızla birlikte saklanan her şey: işlemler ve bunların fiş fotoğrafları, tekrarlayan işlemler, bütçeler, birikim hedefleri, kategoriler, kredi kartları ve taksitli alışverişler, borçlar ve bunların ödemeleri, altın ve döviz kayıtları, hesaplar ve transferler ile profil fotoğrafınız.",
+  "deleteDeletedDevice": "Verilerinizin cihazlarınızdaki kopyası, her cihazda oturum kapandığında.",
+  "deleteKeptTitle": "Neler saklanır, ne kadar süreyle",
+  "deleteKeptBackups": "Veritabanının her gece aldığımız yedeklerinde verileriniz, bu yedekler de sırası gelip silinene kadar kalır: günlük yedekler 14 gün, aylık yedekler altı ay sonra silinir. Böylece en geç altı ay sonra hesabınızdan geriye hiçbir şey kalmaz. Yedekler yalnızca bir arızadan sonra hizmeti geri yüklemek için kullanılır.",
+  "deleteKeptLogs": "Sunucumuza ve tüneline yapılan isteklerin kayıtları (IP adresleri, zamanlar ve ne istendiği) yalnızca hizmeti çalıştırmak ve güvenliğini sağlamak için gereken süre boyunca saklanır.",
+  "deleteKeptProviders": "Expo ve Google, aldıkları ve hesabınızla ilişkilendirilmemiş güncelleme ve tarayıcı tanılama verilerini kendi kurallarına göre saklar.",
+  "deletePartialTitle": "Verilerinizin bir kısmını silmek",
+  "deletePartial": "Veri silmek için hesabınızı silmeniz gerekmez: uygulamada istediğiniz işlemi, fiş fotoğrafını, bütçeyi, birikim hedefini, borcu, kaydı ya da hesaplarınızdan birini silebilir, profil fotoğrafınızı da Profili Düzenle'de kaldırabilirsiniz. Başka herhangi bir şeyi silmemizi istemek için ugurcaneser@icloud.com adresine e-posta gönderin."
+}

@@ -1,0 +1,23 @@
+{
+  "deleteTitle": "Eliminar tu cuenta de Budgetory",
+  "deleteByline": "Budgetory, la app de presupuesto personal de Uğurcan Eser",
+  "deleteIntro": "Puedes eliminar tu cuenta de Budgetory y todos sus datos en cualquier momento, desde la app o por correo electrónico.",
+  "deleteInAppTitle": "En la app",
+  "deleteStep1": "Abre Budgetory e inicia sesión.",
+  "deleteStep2": "Toca «Ajustes».",
+  "deleteStep3": "En la sección «Cuenta», toca «Eliminar cuenta».",
+  "deleteStep4": "Introduce tu contraseña y toca «Eliminar cuenta».",
+  "deleteInAppDone": "Tu cuenta y sus datos se eliminan de inmediato, y se cierra tu sesión.",
+  "deleteEmailTitle": "Por correo electrónico, sin la app",
+  "deleteEmail": "Escribe a ugurcaneser@icloud.com desde la dirección de correo de tu cuenta y pídenos que eliminemos tu cuenta de Budgetory. La eliminaremos y te lo confirmaremos por correo electrónico en un plazo de 30 días. Si escribes desde otra dirección, es posible que te pidamos que confirmes que la cuenta es tuya.",
+  "deleteDeletedTitle": "Qué se elimina",
+  "deleteDeletedFirebase": "Tu cuenta de inicio de sesión en Firebase Authentication: tu nombre, tu dirección de correo electrónico y tu contraseña.",
+  "deleteDeletedServer": "Todo lo que se guarda con tu cuenta en nuestro servidor: transacciones y sus fotos de recibos, transacciones recurrentes, presupuestos, metas de ahorro, categorías, tarjetas de crédito y compras a plazos, deudas y sus pagos, registros de oro y divisas, cuentas y transferencias, y tu foto de perfil.",
+  "deleteDeletedDevice": "La copia de tus datos en tus dispositivos, a medida que se cierra la sesión en cada uno.",
+  "deleteKeptTitle": "Qué se conserva y durante cuánto tiempo",
+  "deleteKeptBackups": "Nuestras copias de seguridad nocturnas de la base de datos conservan tus datos hasta que se eliminan a su vez: las diarias, a los 14 días; las mensuales, a los seis meses. Así, pasados seis meses como máximo, no queda nada de tu cuenta. Las copias de seguridad solo se usan para restaurar el servicio tras un fallo.",
+  "deleteKeptLogs": "Los registros de las solicitudes a nuestro servidor y a su túnel (direcciones IP, horas y lo que se pidió) se conservan solo el tiempo necesario para mantener el servicio en funcionamiento y protegerlo.",
+  "deleteKeptProviders": "Expo y Google conservan, según sus propias normas, los datos de diagnóstico de las actualizaciones y del escáner que recibieron, que no están vinculados a tu cuenta.",
+  "deletePartialTitle": "Eliminar parte de tus datos",
+  "deletePartial": "No hace falta que elimines tu cuenta para eliminar datos: en la app puedes eliminar cualquier transacción, foto de recibo, presupuesto, meta de ahorro, deuda, registro o cuenta, y quitar tu foto de perfil en «Editar perfil». Para pedirnos que eliminemos cualquier otra cosa, escribe a ugurcaneser@icloud.com."
+}

@@ -1,0 +1,23 @@
+{
+  "deleteTitle": "Supprimer votre compte Budgetory",
+  "deleteByline": "Budgetory, l'app de budget personnel d'Uğurcan Eser",
+  "deleteIntro": "Vous pouvez supprimer votre compte Budgetory et toutes ses données à tout moment, dans l'app ou par e-mail.",
+  "deleteInAppTitle": "Dans l'app",
+  "deleteStep1": "Ouvrez Budgetory et connectez-vous.",
+  "deleteStep2": "Touchez « Paramètres ».",
+  "deleteStep3": "Sous « Compte », touchez « Supprimer le compte ».",
+  "deleteStep4": "Saisissez votre mot de passe et touchez « Supprimer le compte ».",
+  "deleteInAppDone": "Votre compte et ses données sont immédiatement supprimés, et vous êtes déconnecté.",
+  "deleteEmailTitle": "Par e-mail, sans l'app",
+  "deleteEmail": "Écrivez à ugurcaneser@icloud.com depuis l'adresse de votre compte et demandez-nous de supprimer votre compte Budgetory. Nous le supprimerons et vous le confirmerons par e-mail dans les 30 jours. Si vous écrivez depuis une autre adresse, nous pourrons vous demander de confirmer que le compte vous appartient.",
+  "deleteDeletedTitle": "Ce qui est supprimé",
+  "deleteDeletedFirebase": "Votre compte de connexion dans Firebase Authentication : votre nom, votre adresse e-mail et votre mot de passe.",
+  "deleteDeletedServer": "Tout ce qui est enregistré avec votre compte sur notre serveur : les transactions et leurs photos de reçus, les transactions récurrentes, les budgets, les objectifs d'épargne, les catégories, les cartes de crédit et les achats en plusieurs fois, les dettes et leurs paiements, les entrées d'or et de devises, les comptes et les transferts, et votre photo de profil.",
+  "deleteDeletedDevice": "La copie de vos données sur vos appareils, au fur et à mesure que chacun se déconnecte.",
+  "deleteKeptTitle": "Ce qui est conservé, et pendant combien de temps",
+  "deleteKeptBackups": "Les sauvegardes de la base de données que nous faisons chaque nuit conservent vos données jusqu'à ce qu'elles soient à leur tour supprimées : les sauvegardes quotidiennes au bout de 14 jours, les mensuelles au bout de six mois. Ainsi, au bout de six mois au plus, il ne reste plus rien de votre compte. Les sauvegardes ne servent qu'à restaurer le service après une panne.",
+  "deleteKeptLogs": "Les journaux des requêtes adressées à notre serveur et à son tunnel (adresses IP, heures et ce qui a été demandé) ne sont conservés que le temps nécessaire pour faire fonctionner et sécuriser le service.",
+  "deleteKeptProviders": "Expo et Google conservent selon leurs propres règles les données de diagnostic des mises à jour et du scanner qu'ils ont reçues, qui ne sont pas liées à votre compte.",
+  "deletePartialTitle": "Supprimer une partie de vos données",
+  "deletePartial": "Vous n'avez pas besoin de supprimer votre compte pour supprimer des données : vous pouvez supprimer dans l'app une transaction, une photo de reçu, un budget, un objectif d'épargne, une dette, une entrée ou un compte, et retirer votre photo de profil dans « Modifier le profil ». Pour nous demander de supprimer autre chose, écrivez à ugurcaneser@icloud.com."
+}

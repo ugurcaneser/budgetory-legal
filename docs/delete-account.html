@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="How to delete your Budgetory account and its data, in the app or by email.">
+<title>Delete a Budgetory Account</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fbfaf7;
+  --text: #1c1d1f;
+  --muted: #5d6066;
+  --rule: #e2dfd8;
+  --link: #2450c4;
+  --chip: #efece5;
+  --chip-text: #2a2b2e;
+  --chip-on: #1c1d1f;
+  --chip-on-text: #fbfaf7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121315;
+    --text: #e9e9ec;
+    --muted: #a3a6ad;
+    --rule: #2b2d31;
+    --link: #93b2ff;
+    --chip: #1f2124;
+    --chip-text: #d9dade;
+    --chip-on: #e9e9ec;
+    --chip-on-text: #121315;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
+header { border-bottom: 1px solid var(--rule); }
+header .wrap { padding-top: 14px; padding-bottom: 14px; display: flex; flex-direction: column; gap: 10px; }
+.top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+.brand { font-weight: 650; letter-spacing: -0.01em; font-size: 1.05rem; color: var(--text); text-decoration: none; }
+.pages { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.95rem; }
+.pages a { color: var(--muted); text-decoration: none; }
+.pages a:hover { text-decoration: underline; }
+.pages a[aria-current="page"] { color: var(--text); font-weight: 600; }
+#languages ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+#languages a {
+  display: inline-block;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--chip);
+  color: var(--chip-text);
+  text-decoration: none;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+#languages a:hover { text-decoration: underline; }
+#languages a[aria-current="true"] { background: var(--chip-on); color: var(--chip-on-text); }
+a { color: var(--link); }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+main { padding-top: 8px; padding-bottom: 64px; }
+html:not(.js) .lang + .lang { border-top: 1px solid var(--rule); margin-top: 48px; }
+.js .lang { display: none; }
+[data-lang="en"] #en,
+[data-lang="tr"] #tr,
+[data-lang="de"] #de,
+[data-lang="fr"] #fr,
+[data-lang="es"] #es,
+[data-lang="ru"] #ru { display: block; }
+h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -0.015em; margin: 32px 0 6px; }
+h2 { font-size: 1.35rem; line-height: 1.3; margin: 40px 0 10px; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 26px 0 6px; }
+h1, h2, h3 { scroll-margin-top: 16px; }
+p, ul, ol { margin: 0 0 14px; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0 0 8px; }
+ol li { padding-left: 0.2em; }
+.updated { color: var(--muted); font-size: 0.95rem; margin-bottom: 24px; }
+[lang="de"], [lang="ru"], [lang="tr"] { hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 10 4 4; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.65rem; margin-top: 24px; }
+  h2 { font-size: 1.25rem; }
+}
+</style>
+<script>
+(function () {
+  var m = /^(tr|de|fr|es|ru)(-|$)/.exec(decodeURIComponent(location.hash.slice(1)));
+  var root = document.documentElement;
+  root.className = 'js';
+  root.setAttribute('data-lang', m ? m[1] : 'en');
+  root.lang = m ? m[1] : 'en';
+})();
+</script>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top">
+<a class="brand" href="index.html">Budgetory</a>
+<nav id="pages" class="pages" aria-label="Budgetory"><a id="page-policy" href="index.html" data-file="index.html">Privacy Policy</a><a id="page-deletion" href="delete-account.html" data-file="delete-account.html" aria-current="page">Delete Account</a></nav>
+</div>
+<nav id="languages" aria-label="Language"><ul><li><a id="to-en" href="#en" hreflang="en" lang="en" aria-current="true">English</a></li><li><a id="to-tr" href="#tr" hreflang="tr" lang="tr">Türkçe</a></li><li><a id="to-de" href="#de" hreflang="de" lang="de">Deutsch</a></li><li><a id="to-fr" href="#fr" hreflang="fr" lang="fr">Français</a></li><li><a id="to-es" href="#es" hreflang="es" lang="es">Español</a></li><li><a id="to-ru" href="#ru" hreflang="ru" lang="ru">Русский</a></li></ul></nav>
+</div>
+</header>
+<main class="wrap">
+<article class="lang" id="en" lang="en">
+<h1>Delete your Budgetory account</h1>
+<p class="updated">Budgetory, the personal budgeting app by Uğurcan&nbsp;Eser</p>
+<p>You can delete your Budgetory account and all of its data at any time, in the app or by email.</p>
+<h2 id="in-app">In the app</h2>
+<ol><li>Open Budgetory and sign in.</li><li>Tap Settings.</li><li>Under Account, tap Delete Account.</li><li>Enter your password and tap Delete Account.</li></ol>
+<p>Your account and its data are deleted at once, and you're signed out.</p>
+<h2 id="email">By email, without the app</h2>
+<p>Email <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> from the address of your account and ask us to delete your Budgetory account. We'll delete it and confirm by email within 30 days. If you write from another address, we may ask you to confirm that the account is yours.</p>
+<h2 id="deleted">What is deleted</h2>
+<ul><li>Your sign-in account in Firebase Authentication: your name, email address and password.</li><li>Everything stored with your account on our server: transactions and their receipt photos, recurring transactions, budgets, savings goals, categories, credit cards and installment purchases, debts and their payments, gold and currency entries, accounts and transfers, and your profile photo.</li><li>The copy of your data on your devices, as each one signs out.</li></ul>
+<h2 id="kept">What is kept, and for how long</h2>
+<ul><li>Our nightly backups of the database keep your data until they are deleted in turn: daily backups after 14 days, monthly ones after six months. So after six months at most, nothing of your account remains. Backups are used only to restore the service after a failure.</li><li>Logs of requests to our server and its tunnel (IP addresses, times and what was asked for) are kept only as long as needed to run and secure the service.</li><li>Expo and Google keep the update and scanner diagnostics they received, which aren't linked to your account, under their own rules.</li></ul>
+<h2 id="partial">Deleting some of your data</h2>
+<p>You don't have to delete your account to delete data: you can delete any transaction, receipt photo, budget, savings goal, debt, entry or account in the app, and remove your profile photo in Edit Profile. To ask us to delete anything else, email <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+<article class="lang" id="tr" lang="tr">
+<h1>Budgetory hesabınızı silin</h1>
+<p class="updated">Budgetory, Uğurcan&nbsp;Eser'in kişisel bütçe uygulaması</p>
+<p>Budgetory hesabınızı ve tüm verilerini istediğiniz zaman, uygulamadan ya da e-postayla silebilirsiniz.</p>
+<h2 id="tr-in-app">Uygulamada</h2>
+<ol><li>Budgetory'yi açın ve giriş yapın.</li><li>Ayarlar'a dokunun.</li><li>Hesap bölümünde Hesabı Sil'e dokunun.</li><li>Şifrenizi girin ve Hesabı Sil'e dokunun.</li></ol>
+<p>Hesabınız ve verileri hemen silinir, oturumunuz da kapatılır.</p>
+<h2 id="tr-email">E-postayla, uygulama olmadan</h2>
+<p>Hesabınızın e-posta adresinden <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> adresine yazın ve Budgetory hesabınızı silmemizi isteyin. Hesabınızı 30 gün içinde siler ve bunu size e-postayla teyit ederiz. Başka bir adresten yazarsanız hesabın size ait olduğunu doğrulamanızı isteyebiliriz.</p>
+<h2 id="tr-deleted">Neler silinir</h2>
+<ul><li>Firebase Authentication'daki oturum açma hesabınız: adınız, e-posta adresiniz ve şifreniz.</li><li>Sunucumuzda hesabınızla birlikte saklanan her şey: işlemler ve bunların fiş fotoğrafları, tekrarlayan işlemler, bütçeler, birikim hedefleri, kategoriler, kredi kartları ve taksitli alışverişler, borçlar ve bunların ödemeleri, altın ve döviz kayıtları, hesaplar ve transferler ile profil fotoğrafınız.</li><li>Verilerinizin cihazlarınızdaki kopyası, her cihazda oturum kapandığında.</li></ul>
+<h2 id="tr-kept">Neler saklanır, ne kadar süreyle</h2>
+<ul><li>Veritabanının her gece aldığımız yedeklerinde verileriniz, bu yedekler de sırası gelip silinene kadar kalır: günlük yedekler 14 gün, aylık yedekler altı ay sonra silinir. Böylece en geç altı ay sonra hesabınızdan geriye hiçbir şey kalmaz. Yedekler yalnızca bir arızadan sonra hizmeti geri yüklemek için kullanılır.</li><li>Sunucumuza ve tüneline yapılan isteklerin kayıtları (IP adresleri, zamanlar ve ne istendiği) yalnızca hizmeti çalıştırmak ve güvenliğini sağlamak için gereken süre boyunca saklanır.</li><li>Expo ve Google, aldıkları ve hesabınızla ilişkilendirilmemiş güncelleme ve tarayıcı tanılama verilerini kendi kurallarına göre saklar.</li></ul>
+<h2 id="tr-partial">Verilerinizin bir kısmını silmek</h2>
+<p>Veri silmek için hesabınızı silmeniz gerekmez: uygulamada istediğiniz işlemi, fiş fotoğrafını, bütçeyi, birikim hedefini, borcu, kaydı ya da hesaplarınızdan birini silebilir, profil fotoğrafınızı da Profili Düzenle'de kaldırabilirsiniz. Başka herhangi bir şeyi silmemizi istemek için <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> adresine e-posta gönderin.</p>
+</article>
+<article class="lang" id="de" lang="de">
+<h1>Ihr Budgetory-Konto löschen</h1>
+<p class="updated">Budgetory, die App von Uğurcan&nbsp;Eser zur persönlichen Budgetplanung</p>
+<p>Sie können Ihr Budgetory-Konto und alle zugehörigen Daten jederzeit löschen, in der App oder per E-Mail.</p>
+<h2 id="de-in-app">In der App</h2>
+<ol><li>Öffnen Sie Budgetory und melden Sie sich an.</li><li>Tippen Sie auf „Einstellungen“.</li><li>Tippen Sie unter „Konto“ auf „Konto löschen“.</li><li>Geben Sie Ihr Passwort ein und tippen Sie auf „Konto löschen“.</li></ol>
+<p>Ihr Konto und die zugehörigen Daten werden sofort gelöscht, und Sie werden abgemeldet.</p>
+<h2 id="de-email">Per E-Mail, ohne die App</h2>
+<p>Schreiben Sie von der Adresse Ihres Kontos eine E-Mail an <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> und bitten Sie uns, Ihr Budgetory-Konto zu löschen. Wir löschen es und bestätigen dies innerhalb von 30 Tagen per E-Mail. Wenn Sie von einer anderen Adresse schreiben, können wir Sie bitten zu bestätigen, dass das Konto Ihnen gehört.</p>
+<h2 id="de-deleted">Was gelöscht wird</h2>
+<ul><li>Ihr Anmeldekonto bei Firebase Authentication: Ihr Name, Ihre E-Mail-Adresse und Ihr Passwort.</li><li>Alles, was mit Ihrem Konto auf unserem Server gespeichert ist: Transaktionen und ihre Belegfotos, wiederkehrende Transaktionen, Budgets, Sparziele, Kategorien, Kreditkarten und Ratenkäufe, Schulden und ihre Zahlungen, Gold- und Währungseinträge, Konten und Umbuchungen sowie Ihr Profilfoto.</li><li>Die Kopie Ihrer Daten auf Ihren Geräten, sobald das jeweilige Gerät abgemeldet wird.</li></ul>
+<h2 id="de-kept">Was aufbewahrt wird und wie lange</h2>
+<ul><li>Ihre Daten bleiben in unseren nächtlichen Backups der Datenbank, bis diese ihrerseits gelöscht werden: tägliche Backups nach 14 Tagen, monatliche nach sechs Monaten. Nach spätestens sechs Monaten ist also nichts mehr von Ihrem Konto übrig. Backups werden nur verwendet, um den Dienst nach einem Ausfall wiederherzustellen.</li><li>Protokolle der Anfragen an unseren Server und seinen Tunnel (IP-Adressen, Zeitpunkte und was angefordert wurde) werden nur so lange aufbewahrt, wie es nötig ist, um den Dienst zu betreiben und abzusichern.</li><li>Expo und Google bewahren die Update- und Scanner-Diagnosedaten, die sie erhalten haben und die nicht mit Ihrem Konto verknüpft sind, nach ihren eigenen Regeln auf.</li></ul>
+<h2 id="de-partial">Einen Teil Ihrer Daten löschen</h2>
+<p>Sie müssen nicht Ihr Konto löschen, um Daten zu löschen: Sie können in der App beliebige Transaktionen, Belegfotos, Budgets, Sparziele, Schulden, Einträge oder Konten löschen und Ihr Profilfoto unter „Profil bearbeiten“ entfernen. Wenn wir etwas anderes löschen sollen, schreiben Sie eine E-Mail an <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+<article class="lang" id="fr" lang="fr">
+<h1>Supprimer votre compte Budgetory</h1>
+<p class="updated">Budgetory, l'app de budget personnel d'Uğurcan&nbsp;Eser</p>
+<p>Vous pouvez supprimer votre compte Budgetory et toutes ses données à tout moment, dans l'app ou par e-mail.</p>
+<h2 id="fr-in-app">Dans l'app</h2>
+<ol><li>Ouvrez Budgetory et connectez-vous.</li><li>Touchez « Paramètres ».</li><li>Sous « Compte », touchez « Supprimer le compte ».</li><li>Saisissez votre mot de passe et touchez « Supprimer le compte ».</li></ol>
+<p>Votre compte et ses données sont immédiatement supprimés, et vous êtes déconnecté.</p>
+<h2 id="fr-email">Par e-mail, sans l'app</h2>
+<p>Écrivez à <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> depuis l'adresse de votre compte et demandez-nous de supprimer votre compte Budgetory. Nous le supprimerons et vous le confirmerons par e-mail dans les 30 jours. Si vous écrivez depuis une autre adresse, nous pourrons vous demander de confirmer que le compte vous appartient.</p>
+<h2 id="fr-deleted">Ce qui est supprimé</h2>
+<ul><li>Votre compte de connexion dans Firebase Authentication : votre nom, votre adresse e-mail et votre mot de passe.</li><li>Tout ce qui est enregistré avec votre compte sur notre serveur : les transactions et leurs photos de reçus, les transactions récurrentes, les budgets, les objectifs d'épargne, les catégories, les cartes de crédit et les achats en plusieurs fois, les dettes et leurs paiements, les entrées d'or et de devises, les comptes et les transferts, et votre photo de profil.</li><li>La copie de vos données sur vos appareils, au fur et à mesure que chacun se déconnecte.</li></ul>
+<h2 id="fr-kept">Ce qui est conservé, et pendant combien de temps</h2>
+<ul><li>Les sauvegardes de la base de données que nous faisons chaque nuit conservent vos données jusqu'à ce qu'elles soient à leur tour supprimées : les sauvegardes quotidiennes au bout de 14 jours, les mensuelles au bout de six mois. Ainsi, au bout de six mois au plus, il ne reste plus rien de votre compte. Les sauvegardes ne servent qu'à restaurer le service après une panne.</li><li>Les journaux des requêtes adressées à notre serveur et à son tunnel (adresses IP, heures et ce qui a été demandé) ne sont conservés que le temps nécessaire pour faire fonctionner et sécuriser le service.</li><li>Expo et Google conservent selon leurs propres règles les données de diagnostic des mises à jour et du scanner qu'ils ont reçues, qui ne sont pas liées à votre compte.</li></ul>
+<h2 id="fr-partial">Supprimer une partie de vos données</h2>
+<p>Vous n'avez pas besoin de supprimer votre compte pour supprimer des données : vous pouvez supprimer dans l'app une transaction, une photo de reçu, un budget, un objectif d'épargne, une dette, une entrée ou un compte, et retirer votre photo de profil dans « Modifier le profil ». Pour nous demander de supprimer autre chose, écrivez à <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+<article class="lang" id="es" lang="es">
+<h1>Eliminar tu cuenta de Budgetory</h1>
+<p class="updated">Budgetory, la app de presupuesto personal de Uğurcan&nbsp;Eser</p>
+<p>Puedes eliminar tu cuenta de Budgetory y todos sus datos en cualquier momento, desde la app o por correo electrónico.</p>
+<h2 id="es-in-app">En la app</h2>
+<ol><li>Abre Budgetory e inicia sesión.</li><li>Toca «Ajustes».</li><li>En la sección «Cuenta», toca «Eliminar cuenta».</li><li>Introduce tu contraseña y toca «Eliminar cuenta».</li></ol>
+<p>Tu cuenta y sus datos se eliminan de inmediato, y se cierra tu sesión.</p>
+<h2 id="es-email">Por correo electrónico, sin la app</h2>
+<p>Escribe a <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> desde la dirección de correo de tu cuenta y pídenos que eliminemos tu cuenta de Budgetory. La eliminaremos y te lo confirmaremos por correo electrónico en un plazo de 30 días. Si escribes desde otra dirección, es posible que te pidamos que confirmes que la cuenta es tuya.</p>
+<h2 id="es-deleted">Qué se elimina</h2>
+<ul><li>Tu cuenta de inicio de sesión en Firebase Authentication: tu nombre, tu dirección de correo electrónico y tu contraseña.</li><li>Todo lo que se guarda con tu cuenta en nuestro servidor: transacciones y sus fotos de recibos, transacciones recurrentes, presupuestos, metas de ahorro, categorías, tarjetas de crédito y compras a plazos, deudas y sus pagos, registros de oro y divisas, cuentas y transferencias, y tu foto de perfil.</li><li>La copia de tus datos en tus dispositivos, a medida que se cierra la sesión en cada uno.</li></ul>
+<h2 id="es-kept">Qué se conserva y durante cuánto tiempo</h2>
+<ul><li>Nuestras copias de seguridad nocturnas de la base de datos conservan tus datos hasta que se eliminan a su vez: las diarias, a los 14 días; las mensuales, a los seis meses. Así, pasados seis meses como máximo, no queda nada de tu cuenta. Las copias de seguridad solo se usan para restaurar el servicio tras un fallo.</li><li>Los registros de las solicitudes a nuestro servidor y a su túnel (direcciones IP, horas y lo que se pidió) se conservan solo el tiempo necesario para mantener el servicio en funcionamiento y protegerlo.</li><li>Expo y Google conservan, según sus propias normas, los datos de diagnóstico de las actualizaciones y del escáner que recibieron, que no están vinculados a tu cuenta.</li></ul>
+<h2 id="es-partial">Eliminar parte de tus datos</h2>
+<p>No hace falta que elimines tu cuenta para eliminar datos: en la app puedes eliminar cualquier transacción, foto de recibo, presupuesto, meta de ahorro, deuda, registro o cuenta, y quitar tu foto de perfil en «Editar perfil». Para pedirnos que eliminemos cualquier otra cosa, escribe a <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+<article class="lang" id="ru" lang="ru">
+<h1>Удаление аккаунта Budgetory</h1>
+<p class="updated">Budgetory — приложение Uğurcan&nbsp;Eser для ведения личного бюджета</p>
+<p>Вы можете в любое время удалить свой аккаунт Budgetory и все его данные — в приложении или по электронной почте.</p>
+<h2 id="ru-in-app">В приложении</h2>
+<ol><li>Откройте Budgetory и войдите в аккаунт.</li><li>Нажмите «Настройки».</li><li>В разделе «Аккаунт» нажмите «Удалить аккаунт».</li><li>Введите пароль и нажмите «Удалить аккаунт».</li></ol>
+<p>Ваш аккаунт и его данные сразу удаляются, и вы выходите из аккаунта.</p>
+<h2 id="ru-email">По электронной почте, без приложения</h2>
+<p>Напишите на <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> с адреса, к которому привязан ваш аккаунт Budgetory, и попросите нас его удалить. Мы удалим его и подтвердим это по электронной почте в течение 30 дней. Если вы напишете с другого адреса, мы можем попросить вас подтвердить, что аккаунт принадлежит вам.</p>
+<h2 id="ru-deleted">Что удаляется</h2>
+<ul><li>Ваша учётная запись для входа в Firebase Authentication: имя, адрес электронной почты и пароль.</li><li>Всё, что хранится вместе с вашим аккаунтом на нашем сервере: транзакции и фото чеков к ним, регулярные транзакции, бюджеты, цели накоплений, категории, кредитные карты и покупки в рассрочку, долги и платежи по ним, записи о золоте и валюте, счета и переводы, а также фото профиля.</li><li>Копия ваших данных на устройствах — по мере выхода из аккаунта на каждом из них.</li></ul>
+<h2 id="ru-kept">Что сохраняется и как долго</h2>
+<ul><li>В резервных копиях базы данных, которые мы делаем каждую ночь, ваши данные остаются, пока не будут удалены и сами копии: ежедневные — через 14 дней, ежемесячные — через шесть месяцев. Так что не позднее чем через шесть месяцев от вашего аккаунта ничего не останется. Резервные копии используются только для восстановления сервиса после сбоя.</li><li>Журналы запросов к нашему серверу и его туннелю (IP-адреса, время и то, что запрашивалось) хранятся только столько, сколько нужно для работы и защиты сервиса.</li><li>Expo и Google хранят полученные ими диагностические данные обновлений и сканера, не связанные с вашим аккаунтом, по своим правилам.</li></ul>
+<h2 id="ru-partial">Удаление части данных</h2>
+<p>Чтобы удалить данные, не обязательно удалять аккаунт: в приложении можно удалить любую транзакцию, фото чека, бюджет, цель накоплений, долг, запись или счёт, а фото профиля — убрать на экране «Изменить профиль». Чтобы попросить нас удалить что-то ещё, напишите на <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+</main>
+<script>
+(function () {
+  var langs = ["en", "tr", "de", "fr", "es", "ru"];
+  var labels = {"en": {"policy": "Privacy Policy", "deletion": "Delete Account", "language": "Language"}, "tr": {"policy": "Gizlilik Politikası", "deletion": "Hesabı Sil", "language": "Dil"}, "de": {"policy": "Datenschutzerklärung", "deletion": "Konto löschen", "language": "Sprache"}, "fr": {"policy": "Politique de confidentialité", "deletion": "Supprimer le compte", "language": "Langue"}, "es": {"policy": "Política de privacidad", "deletion": "Eliminar cuenta", "language": "Idioma"}, "ru": {"policy": "Политика конфиденциальности", "deletion": "Удалить аккаунт", "language": "Язык"}};
+  var root = document.documentElement;
+  function update(scroll) {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var m = /^(tr|de|fr|es|ru)(-|$)/.exec(id);
+    var lang = m ? m[1] : 'en';
+    var text = labels[lang];
+    root.setAttribute('data-lang', lang);
+    root.lang = lang;
+    langs.forEach(function (code) {
+      var link = document.getElementById('to-' + code);
+      if (code === lang) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    });
+    // The links to the two pages keep the language.
+    ['policy', 'deletion'].forEach(function (page) {
+      var link = document.getElementById('page-' + page);
+      link.textContent = text[page];
+      link.setAttribute('href', link.getAttribute('data-file') + (lang === 'en' ? '' : '#' + lang));
+    });
+    document.getElementById('pages').setAttribute('aria-label', 'Budgetory');
+    document.getElementById('languages').setAttribute('aria-label', text.language);
+    document.title = 'Budgetory \u2013 ' + text["deletion"];
+    if (!scroll) return;
+    var target = id && document.getElementById(id);
+    if (target && langs.indexOf(id) < 0) target.scrollIntoView();
+    else window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', function () { update(true); });
+  update(false);
+})();
+</script>
+</body>
+</html>

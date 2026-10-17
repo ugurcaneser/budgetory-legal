@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="How the Budgetory app uses your personal data. In English, Türkçe, Deutsch, Français, Español and Русский.">
+<title>Budgetory Privacy Policy</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fbfaf7;
+  --text: #1c1d1f;
+  --muted: #5d6066;
+  --rule: #e2dfd8;
+  --link: #2450c4;
+  --chip: #efece5;
+  --chip-text: #2a2b2e;
+  --chip-on: #1c1d1f;
+  --chip-on-text: #fbfaf7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121315;
+    --text: #e9e9ec;
+    --muted: #a3a6ad;
+    --rule: #2b2d31;
+    --link: #93b2ff;
+    --chip: #1f2124;
+    --chip-text: #d9dade;
+    --chip-on: #e9e9ec;
+    --chip-on-text: #121315;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
+header { border-bottom: 1px solid var(--rule); }
+header .wrap { padding-top: 14px; padding-bottom: 14px; display: flex; flex-direction: column; gap: 10px; }
+.top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+.brand { font-weight: 650; letter-spacing: -0.01em; font-size: 1.05rem; color: var(--text); text-decoration: none; }
+.pages { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.95rem; }
+.pages a { color: var(--muted); text-decoration: none; }
+.pages a:hover { text-decoration: underline; }
+.pages a[aria-current="page"] { color: var(--text); font-weight: 600; }
+#languages ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+#languages a {
+  display: inline-block;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--chip);
+  color: var(--chip-text);
+  text-decoration: none;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+#languages a:hover { text-decoration: underline; }
+#languages a[aria-current="true"] { background: var(--chip-on); color: var(--chip-on-text); }
+a { color: var(--link); }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+main { padding-top: 8px; padding-bottom: 64px; }
+html:not(.js) .lang + .lang { border-top: 1px solid var(--rule); margin-top: 48px; }
+.js .lang { display: none; }
+[data-lang="en"] #en,
+[data-lang="tr"] #tr,
+[data-lang="de"] #de,
+[data-lang="fr"] #fr,
+[data-lang="es"] #es,
+[data-lang="ru"] #ru { display: block; }
+h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -0.015em; margin: 32px 0 6px; }
+h2 { font-size: 1.35rem; line-height: 1.3; margin: 40px 0 10px; }
+h3 { font-size: 1.08rem; line-height: 1.35; margin: 26px 0 6px; }
+h1, h2, h3 { scroll-margin-top: 16px; }
+p, ul, ol { margin: 0 0 14px; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0 0 8px; }
+ol li { padding-left: 0.2em; }
+.updated { color: var(--muted); font-size: 0.95rem; margin-bottom: 24px; }
+[lang="de"], [lang="ru"], [lang="tr"] { hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 10 4 4; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.65rem; margin-top: 24px; }
+  h2 { font-size: 1.25rem; }
+}
+</style>
+<script>
+(function () {
+  var m = /^(tr|de|fr|es|ru)(-|$)/.exec(decodeURIComponent(location.hash.slice(1)));
+  var root = document.documentElement;
+  root.className = 'js';
+  root.setAttribute('data-lang', m ? m[1] : 'en');
+  root.lang = m ? m[1] : 'en';
+})();
+</script>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top">
+<a class="brand" href="index.html">Budgetory</a>
+<nav id="pages" class="pages" aria-label="Budgetory"><a id="page-policy" href="index.html" data-file="index.html" aria-current="page">Privacy Policy</a><a id="page-deletion" href="delete-account.html" data-file="delete-account.html">Delete Account</a></nav>
+</div>
+<nav id="languages" aria-label="Language"><ul><li><a id="to-en" href="#en" hreflang="en" lang="en" aria-current="true">English</a></li><li><a id="to-tr" href="#tr" hreflang="tr" lang="tr">Türkçe</a></li><li><a id="to-de" href="#de" hreflang="de" lang="de">Deutsch</a></li><li><a id="to-fr" href="#fr" hreflang="fr" lang="fr">Français</a></li><li><a id="to-es" href="#es" hreflang="es" lang="es">Español</a></li><li><a id="to-ru" href="#ru" hreflang="ru" lang="ru">Русский</a></li></ul></nav>
+</div>
+</header>
+<main class="wrap">
+<article class="lang" id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 17 October 2026</p>
+<p>Budgetory is a personal budgeting app for iPhone and Android. This policy explains which personal data the app and its server use and why, where the data goes, how long it is kept and what your rights are.</p>
+<h2 id="controller">Who is responsible</h2>
+<p>Budgetory is made by Uğurcan&nbsp;Eser, an individual developer in Türkiye. He decides how your personal data is used and is responsible for it: he is the data controller (veri sorumlusu under Türkiye's Personal Data Protection Law, KVKK). In this policy, “we” and “us” mean him. You can reach him at <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+<h2 id="collect">What we collect and why</h2>
+<h3 id="account">Your account</h3>
+<p>To create your account and sign you in, we use your name, your email address and a password. Firebase Authentication, a Google service, keeps them and gives your account a user ID; your password stays with Firebase and never reaches us. Our server keeps your name, email address and user ID with your data, so that only you can get to it. Your email address is also used to reset your password and to confirm a new address when you change it.</p>
+<h3 id="records">Your financial records</h3>
+<p>The app keeps what you enter, so that it can show your figures, work out balances, budgets and forecasts, and keep them the same on all your devices:</p>
+<ul><li>income and expenses, with their amounts, currencies, categories, dates and notes, how a split payment is divided between categories, and the account each one belongs to</li><li>budgets; recurring transactions with their schedules and reminder choices; credit cards with their statement and due days and reminder choices; and purchases you pay in installments</li><li>savings goals, and the money you put aside for them or take out</li><li>the categories you add</li><li>debts, with the names you give the people involved, their amounts, dates, due dates, reminder choices, notes and payments</li><li>gold, silver and foreign currency you buy or sell, with their amounts, dates, what you paid or received, and notes</li><li>your accounts, such as cash, bank accounts and cards, with their names, kinds, currencies, starting balances and which one is your default, and the money you move between them</li></ul>
+<p>With recurring transactions and installments, the app also sends your device's time zone, which tells the server when one is due. Budgetory never asks for card numbers, bank account numbers or bank passwords, and it doesn't connect to your bank.</p>
+<h3 id="photos">Photos</h3>
+<p>You can add a profile photo, and up to five photos of receipts to each transaction. Before sending them, the app makes them smaller and writes them anew without what the camera stores in them, such as where they were taken; our server does the same again. Only you can load your receipt photos, with your sign-in. Your profile photo is kept at a long random address that works without signing in, so that the app can show it like any other picture: anyone who had the address could see the photo. The address changes whenever you set a new photo.</p>
+<h3 id="logs">Server logs</h3>
+<p>Our server, and the tunnel that carries requests to it, record each request: the IP address it came from, the time, what was asked for and the result. We use these records only to run the service, fix problems and protect it from abuse.</p>
+<h2 id="basis">Why we may use your data</h2>
+<p>We use your account details, records and photos to provide the app you signed up for (KVKK Article 5(2)(c); GDPR Article 6(1)(b)). We keep server logs and backups, and use the update service and the receipt scanner, because we have a legitimate interest in keeping Budgetory working, secure and up to date (KVKK Article 5(2)(f); GDPR Article 6(1)(f)).</p>
+<h2 id="device">What stays on your device</h2>
+<p>So that your data shows as soon as you open the app, also without a connection, the app keeps a copy of what it last loaded from our server, and the receipt photos you add or open. Both are in the app's cache, which device backups leave out, and both are deleted when you sign out.</p>
+<p>For the home screen widget, the app keeps a summary of your figures on your device: for each day until the end of next month, what you can spend that day and what is left of your monthly budget, or else the month's expenses and the balance to expect at its end. Amounts are hidden while the app lock or Hide amounts is on. The summary is never sent to us and is cleared when you sign out.</p>
+<p>Firebase keeps you signed in on your device, and the app keeps your settings there. Reminders are notifications that the app schedules on your device; Budgetory doesn't use a push notification service.</p>
+<p>If you turn on the app lock, your device checks your face, fingerprint, passcode or screen lock. The app only learns whether the check succeeded; nothing about your face, fingerprint or passcode reaches the app or us.</p>
+<p>On Android, Budgetory lets the system back up the app to your Google account. Such a backup can include your settings, your sign-in and the widget's summary, but not the copy of your data or your photos. On iPhone, iCloud and computer backups can include the widget's summary. These backups are kept by Google or Apple for you; we can't access them.</p>
+<h2 id="recipients">Who else receives data</h2>
+<p>We use the following services to run Budgetory. Firebase, Hetzner, ngrok and Expo are our service providers: they process data on our behalf, only to provide their service to us.</p>
+<h3 id="firebase">Firebase Authentication (Google)</h3>
+<p>Keeps your name, email address, password and user ID, signs you in, and sends the emails that reset your password or confirm a new email address. It sees your IP address when the app contacts it.</p>
+<h3 id="server">Our server</h3>
+<p>Budgetory's database runs on a virtual private server in Germany that we rent from Hetzner Online GmbH. The app reaches it through a tunnel run by ngrok, Inc. Both handle your data only so that the server can work.</p>
+<h3 id="expo">App updates (Expo)</h3>
+<p>Each time it starts, the app asks Expo's update service (EAS Update) whether a newer version of its code is available, so that fixes can reach you between app store releases. The request contains a random identifier that the app creates on your device for this, the platform (iOS or Android), the app's runtime version and the identifiers of its current updates, and, if the app failed to start the last time, the error text. Expo uses the identifier to count the devices it serves, and it also sees your IP address. The request contains nothing about your account or your figures.</p>
+<h3 id="rates">Exchange rates</h3>
+<p>To convert currencies and value gold and silver, the app downloads the latest rates from Frankfurter (api.frankfurter.app) and from the free currency-api data set (through cdn.jsdelivr.net, or latest.currency-api.pages.dev if that fails). These requests contain nothing about you or your figures: only your IP address reaches these services, as with any request on the internet.</p>
+<h3 id="scanner-android">Scanning receipts on Android (Google ML Kit)</h3>
+<p>The app uses Google's ML Kit document scanner, which runs in Google Play services on your device. The pictures it scans stay on your device and go only to the app. Like all ML Kit features, it sends Google information for diagnostics and usage analytics: device information (such as manufacturer, model, operating system version and build, and available machine learning hardware), app information (package name and app version), a device identifier and identifiers made for each installation, performance metrics (such as latency), the scanner's configuration (such as image format and resolution), input and output sizes, its version, the type of each event (such as starting the scanner or scanning) and error codes. Google says it sends this over an encrypted connection (HTTPS) and doesn't pass it on to third parties. Google uses this information under its own terms and privacy policy, not on our behalf.</p>
+<h3 id="scanner-ios">Scanning receipts on iPhone</h3>
+<p>The app uses the document scanner that is part of iOS (VisionKit). It works entirely on your iPhone and sends nothing.</p>
+<h3 id="stores">App stores</h3>
+<p>Apple and Google, through the App Store and Google Play, give us statistics about downloads and, if you allowed it on your device, crash reports that don't identify you. We use them only to fix problems.</p>
+<h3 id="sharing">When you share something</h3>
+<p>If you export your transactions as a CSV file, share a receipt photo or email us, the data goes wherever you send it.</p>
+<h2 id="abroad">Data outside Türkiye</h2>
+<p>Google, Expo and ngrok are based in the United States and may process data there and in other countries, and our server is in Germany. Your data is therefore processed outside Türkiye, also in countries whose data protection laws differ from those of Türkiye or your own country.</p>
+<h2 id="not">What we don't do</h2>
+<p>Budgetory shows no ads and contains no analytics, tracking or crash-reporting tools. We don't sell your data, share it for advertising or use it to build a profile of you. The app doesn't access your contacts, location or microphone, and it uses the camera and your photos only when you choose to take or pick a photo.</p>
+<h2 id="security">Security</h2>
+<p>All of the app's connections are encrypted (HTTPS). The connection to our server is encrypted as far as ngrok's servers; ngrok decrypts it there and passes it on to our server through its own encrypted tunnel, so ngrok's systems handle the requests in readable form. Your password stays with Firebase. Only we can sign in to our server, and the backups we copy to our own computer are kept on an encrypted disk. No system is completely secure, but we protect your data as well as we reasonably can.</p>
+<h2 id="retention">How long we keep data</h2>
+<p>We keep your account and records until you delete them or your account. Anything you delete is removed from our database at once.</p>
+<p>Receipt photos that you took but didn't save with a transaction are deleted once they are seven days old, the next time the app connects to our server.</p>
+<p>Every night we copy our database to a backup, so that nothing is lost if the server fails. We keep the backups of the last 14 days, and the one from the first day of each month for six months, on the server and on our own computer, and use them only to restore the service. Anything you delete, including your account, stays in the backups until they are deleted in turn, at most six months later.</p>
+<p>Server logs are kept only as long as needed to run and secure the service. Google, Expo and ngrok keep what they receive under their own rules.</p>
+<h2 id="delete">Deleting your account</h2>
+<p>In the app, open Settings, tap Delete Account under Account and confirm with your password. This deletes your account and all of its data from our server at once (transactions and receipt photos, recurring transactions, budgets, savings goals, categories, cards and installment purchases, debts, gold and currency entries, accounts and transfers, and your profile photo), and your sign-in account from Firebase. It also signs you out, which deletes the copy on your device.</p>
+<p>Without the app, email <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> from the address of your account and ask us to delete it. We'll delete it and confirm within 30 days.</p>
+<p>You can also delete any single item in the app at any time, and remove your profile photo in Edit Profile. After any deletion, copies remain only in our backups, until they age out at most six months later.</p>
+<h2 id="rights">Your rights</h2>
+<p>Under Türkiye's Personal Data Protection Law (KVKK, Law No. 6698) and, where it applies to you, the EU's General Data Protection Regulation (GDPR), you can:</p>
+<ul><li>learn whether we process your data, and get information about it and a copy of it</li><li>have it corrected or completed</li><li>have it deleted</li><li>object to how we use it, or ask us to limit its use</li><li>receive it in a portable form (you can also export your transactions as a CSV file in the app)</li><li>learn who receives it, in Türkiye and abroad, and have corrections and deletions passed on to them</li><li>object to a result against you that comes only from automated analysis (Budgetory makes no such decisions)</li><li>claim compensation if unlawful processing harms you</li></ul>
+<p>To use these rights, email <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>, ideally from the address of your account. We'll answer within 30 days, and may ask you to confirm that the account is yours. You can also complain to Türkiye's Personal Data Protection Authority (Kişisel Verileri Koruma Kurumu) or to the data protection authority where you live.</p>
+<h2 id="children">Children</h2>
+<p>Budgetory is not directed at children under 13, and we don't knowingly collect their data. If you believe a child under 13 has created an account, email us and we'll delete it.</p>
+<h2 id="changes">Changes to this policy</h2>
+<p>When we change this policy, we update the date at the top and publish the new version in the app and on our website. If a change affects how your data is used, we'll also tell you in the app or by email.</p>
+<h2 id="contact">Contact</h2>
+<p>For questions, requests or complaints about your data, write to Uğurcan&nbsp;Eser at <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+<article class="lang" id="tr" lang="tr">
+<h1>Gizlilik Politikası</h1>
+<p class="updated">Son güncelleme: 17 Ekim 2026</p>
+<p>Budgetory, iPhone ve Android için kişisel bir bütçe uygulamasıdır. Bu politika, uygulamanın ve sunucusunun hangi kişisel verileri neden kullandığını, verilerin nereye gittiğini, ne kadar süre saklandığını ve haklarınızın neler olduğunu açıklar.</p>
+<h2 id="tr-controller">Sorumlu kişi</h2>
+<p>Budgetory'nin geliştiricisi, Türkiye'de bireysel olarak çalışan Uğurcan&nbsp;Eser'dir. Kişisel verilerinizin nasıl kullanılacağına o karar verir ve bunlardan o sorumludur; yani Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusudur. Bu politikada “biz” ve “bize” sözcükleri onu ifade eder. Kendisine <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> adresinden ulaşabilirsiniz.</p>
+<h2 id="tr-collect">Neleri, neden topluyoruz</h2>
+<h3 id="tr-account">Hesabınız</h3>
+<p>Hesabınızı oluşturmak ve giriş yapmanızı sağlamak için adınızı, e-posta adresinizi ve bir şifre kullanırız. Bunları bir Google hizmeti olan Firebase Authentication saklar ve hesabınıza bir kullanıcı kimliği verir; şifreniz Firebase'te kalır ve hiçbir zaman bize ulaşmaz. Sunucumuz adınızı, e-posta adresinizi ve kullanıcı kimliğinizi verilerinizle birlikte saklar; böylece verilerinize yalnızca siz ulaşabilirsiniz. E-posta adresiniz ayrıca şifrenizi sıfırlamak ve adresinizi değiştirdiğinizde yeni adresi doğrulamak için kullanılır.</p>
+<h3 id="tr-records">Finansal kayıtlarınız</h3>
+<p>Uygulama, rakamlarınızı gösterebilmek, bakiyeleri, bütçeleri ve tahminleri hesaplayabilmek ve bunları tüm cihazlarınızda aynı tutabilmek için girdiklerinizi saklar:</p>
+<ul><li>gelir ve giderler ile bunların tutarları, para birimleri, kategorileri, tarihleri ve notları, bölünmüş bir ödemenin kategorilere nasıl ayrıldığı ve her birinin bağlı olduğu hesap</li><li>bütçeler; tekrarlayan işlemler ile bunların zamanlamaları ve hatırlatma tercihleri; kredi kartları ile bunların hesap kesim günleri, son ödeme günleri ve hatırlatma tercihleri; ve taksitle ödediğiniz alışverişler</li><li>birikim hedefleri ile bunlar için kenara ayırdığınız ya da bunlardan çektiğiniz para</li><li>eklediğiniz kategoriler</li><li>borçlar ile bunlarda yer alan kişilere verdiğiniz adlar, borçların tutarları, tarihleri, son ödeme tarihleri, hatırlatma tercihleri, notları ve ödemeleri</li><li>satın aldığınız ya da sattığınız altın, gümüş ve döviz ile bunların miktarları, tarihleri, karşılığında ödediğiniz ya da aldığınız tutar ve notları</li><li>nakit, banka hesapları ve kartlar gibi hesaplarınız ile bunların adları, türleri, para birimleri, başlangıç bakiyeleri ve hangisinin varsayılan hesabınız olduğu, ayrıca hesaplarınız arasında aktardığınız para</li></ul>
+<p>Tekrarlayan işlemler ve taksitler için uygulama cihazınızın saat dilimini de gönderir; sunucu, bunların gününün ne zaman geldiğini buna bakarak belirler. Budgetory hiçbir zaman kart numarası, banka hesap numarası ya da banka şifresi istemez ve bankanıza bağlanmaz.</p>
+<h3 id="tr-photos">Fotoğraflar</h3>
+<p>Bir profil fotoğrafı ve her işleme en fazla beş fiş fotoğrafı ekleyebilirsiniz. Uygulama bunları göndermeden önce küçültür ve kameranın içlerine kaydettiği, çekildikleri yer gibi bilgiler olmadan yeniden kaydeder; sunucumuz da aynısını bir kez daha yapar. Fiş fotoğraflarınızı yalnızca siz, kendi oturumunuzla açabilirsiniz. Profil fotoğrafınız ise uygulamanın onu diğer resimler gibi gösterebilmesi için giriş yapmadan da açılabilen, uzun ve rastgele bir adreste saklanır: bu adresi bilen herkes fotoğrafı görebilir. Her yeni fotoğraf belirlediğinizde adres değişir.</p>
+<h3 id="tr-logs">Sunucu kayıtları</h3>
+<p>Sunucumuz ve istekleri ona ileten tünel her isteği kaydeder: isteğin geldiği IP adresini, zamanını, ne istendiğini ve sonucunu. Bu kayıtları yalnızca hizmeti çalıştırmak, sorunları gidermek ve hizmeti kötüye kullanıma karşı korumak için kullanırız.</p>
+<h2 id="tr-basis">Verilerinizi hangi gerekçeyle kullanabiliyoruz</h2>
+<p>Hesap bilgilerinizi, kayıtlarınızı ve fotoğraflarınızı, kaydolduğunuz uygulamayı size sunmak için kullanırız (KVKK md. 5/2-c; GDPR md. 6/1-b). Budgetory'yi çalışır durumda, güvenli ve güncel tutmakta meşru menfaatimiz bulunduğundan sunucu kayıtlarını ve yedekleri saklar, güncelleme hizmetini ve fiş tarayıcısını kullanırız (KVKK md. 5/2-f; GDPR md. 6/1-f).</p>
+<h2 id="tr-device">Cihazınızda kalanlar</h2>
+<p>Verilerinizin uygulamayı açar açmaz, bağlantı yokken de görünmesi için uygulama, sunucumuzdan en son yüklediklerinin bir kopyasını ve eklediğiniz ya da açtığınız fiş fotoğraflarını saklar. İkisi de uygulamanın, cihaz yedeklerine alınmayan önbelleğinde tutulur ve çıkış yaptığınızda ikisi de silinir.</p>
+<p>Ana ekran widget'ı için uygulama, rakamlarınızın bir özetini cihazınızda saklar: gelecek ayın sonuna kadar her gün için o gün ne kadar harcayabileceğiniz ve aylık bütçenizden ne kadar kaldığı ya da bunun yerine ayın giderleri ve ay sonunda beklenen bakiye. Uygulama kilidi ya da “Tutarları gizle” etkinken tutarlar gizlenir. Özet hiçbir zaman bize gönderilmez ve çıkış yaptığınızda temizlenir.</p>
+<p>Firebase cihazınızda oturumunuzu açık tutar, uygulama da ayarlarınızı orada saklar. Hatırlatmalar, uygulamanın cihazınızda planladığı bildirimlerdir; Budgetory anlık bildirim hizmeti kullanmaz.</p>
+<p>Uygulama kilidini etkinleştirirseniz yüzünüzü, parmak izinizi, parolanızı ya da ekran kilidinizi cihazınız kontrol eder. Uygulama yalnızca kontrolün başarılı olup olmadığını öğrenir; yüzünüz, parmak iziniz ya da parolanızla ilgili hiçbir şey uygulamaya ya da bize ulaşmaz.</p>
+<p>Android'de Budgetory, sistemin uygulamayı Google hesabınıza yedeklemesine izin verir. Böyle bir yedek ayarlarınızı, oturumunuzu ve widget'ın özetini içerebilir, ancak verilerinizin kopyasını ya da fotoğraflarınızı içermez. iPhone'da iCloud ve bilgisayar yedekleri widget'ın özetini içerebilir. Bu yedekleri sizin için Google ya da Apple saklar; bunlara erişemeyiz.</p>
+<h2 id="tr-recipients">Verileri başka kimler alır</h2>
+<p>Budgetory'yi çalıştırmak için aşağıdaki hizmetleri kullanırız. Firebase, Hetzner, ngrok ve Expo hizmet sağlayıcılarımızdır: verileri bizim adımıza ve yalnızca bize hizmetlerini sunmak için işlerler.</p>
+<h3 id="tr-firebase">Firebase Authentication (Google)</h3>
+<p>Adınızı, e-posta adresinizi, şifrenizi ve kullanıcı kimliğinizi saklar, giriş yapmanızı sağlar ve şifrenizi sıfırlamaya ya da yeni bir e-posta adresini doğrulamaya yarayan e-postaları gönderir. Uygulama kendisine bağlandığında IP adresinizi görür.</p>
+<h3 id="tr-server">Sunucumuz</h3>
+<p>Budgetory'nin veritabanı, Hetzner Online GmbH'den kiraladığımız ve Almanya'da bulunan bir sanal özel sunucuda çalışır. Uygulama bu sunucuya ngrok, Inc. tarafından işletilen bir tünel üzerinden ulaşır. Her ikisi de verilerinizi yalnızca sunucunun çalışabilmesi için işler.</p>
+<h3 id="tr-expo">Uygulama güncellemeleri (Expo)</h3>
+<p>Düzeltmelerin uygulama mağazası sürümleri arasında size ulaşabilmesi için uygulama, her açılışında Expo'nun güncelleme hizmetine (EAS Update) kodunun daha yeni bir sürümü olup olmadığını sorar. İstek, uygulamanın bu amaçla cihazınızda oluşturduğu rastgele bir tanımlayıcıyı, platformu (iOS ya da Android), uygulamanın çalışma zamanı sürümünü (runtime version) ve mevcut güncellemelerinin tanımlayıcılarını, ayrıca uygulama son seferinde açılamadıysa hata metnini içerir. Expo bu tanımlayıcıyı hizmet verdiği cihazları saymak için kullanır; IP adresinizi de görür. İstek, hesabınız ya da rakamlarınızla ilgili hiçbir şey içermez.</p>
+<h3 id="tr-rates">Döviz kurları</h3>
+<p>Para birimlerini çevirmek ve altın ile gümüşün değerini hesaplamak için uygulama, en güncel kurları Frankfurter'den (api.frankfurter.app) ve ücretsiz currency-api veri kümesinden (cdn.jsdelivr.net üzerinden, o çalışmazsa latest.currency-api.pages.dev üzerinden) indirir. Bu istekler sizinle ya da rakamlarınızla ilgili hiçbir şey içermez: internetteki her istekte olduğu gibi bu hizmetlere yalnızca IP adresiniz ulaşır.</p>
+<h3 id="tr-scanner-android">Android'de fiş tarama (Google ML Kit)</h3>
+<p>Uygulama, Google'ın cihazınızda Google Play Hizmetleri içinde çalışan ML Kit belge tarayıcısını kullanır. Taranan görüntüler cihazınızda kalır ve yalnızca uygulamaya gider. Tüm ML Kit özellikleri gibi tarayıcı da tanılama ve kullanım analizi için Google'a şu bilgileri gönderir: cihaz bilgileri (üretici, model, işletim sistemi sürümü ve derlemesi ile kullanılabilir makine öğrenimi donanımı gibi), uygulama bilgileri (paket adı ve uygulama sürümü), bir cihaz tanımlayıcısı ve her kurulum için oluşturulan tanımlayıcılar, performans ölçümleri (gecikme süresi gibi), tarayıcının yapılandırması (görüntü biçimi ve çözünürlük gibi), girdi ve çıktı boyutları, tarayıcının sürümü, her olayın türü (tarayıcıyı başlatma ya da tarama gibi) ve hata kodları. Google, bu bilgileri şifreli bir bağlantı (HTTPS) üzerinden gönderdiğini ve üçüncü taraflara aktarmadığını belirtir. Google bu bilgileri bizim adımıza değil, kendi koşullarına ve gizlilik politikasına göre kullanır.</p>
+<h3 id="tr-scanner-ios">iPhone'da fiş tarama</h3>
+<p>Uygulama, iOS'un bir parçası olan belge tarayıcısını (VisionKit) kullanır. Tarayıcı tamamen iPhone'unuzda çalışır ve hiçbir şey göndermez.</p>
+<h3 id="tr-stores">Uygulama mağazaları</h3>
+<p>Apple ve Google, App Store ve Google Play aracılığıyla bize indirmelere ilişkin istatistikleri ve cihazınızda izin verdiyseniz kimliğinizi ortaya koymayan çökme raporlarını sunar. Bunları yalnızca sorunları gidermek için kullanırız.</p>
+<h3 id="tr-sharing">Bir şey paylaştığınızda</h3>
+<p>İşlemlerinizi CSV dosyası olarak dışa aktarır, bir fiş fotoğrafını paylaşır ya da bize e-posta gönderirseniz veriler, onları gönderdiğiniz yere gider.</p>
+<h2 id="tr-abroad">Türkiye dışındaki veriler</h2>
+<p>Google, Expo ve ngrok Amerika Birleşik Devletleri merkezlidir ve verileri orada ve başka ülkelerde işleyebilir; sunucumuz ise Almanya'dadır. Bu nedenle verileriniz Türkiye dışında, veri koruma yasaları Türkiye'nin ya da kendi ülkenizin yasalarından farklı olan ülkelerde de işlenir.</p>
+<h2 id="tr-not">Yapmadıklarımız</h2>
+<p>Budgetory reklam göstermez; analiz, izleme ya da çökme raporlama araçları içermez. Verilerinizi satmayız, reklam amacıyla paylaşmayız ya da hakkınızda profil oluşturmak için kullanmayız. Uygulama kişilerinize, konumunuza ya da mikrofonunuza erişmez; kamerayı ve fotoğraflarınızı yalnızca siz bir fotoğraf çekmek ya da seçmek istediğinizde kullanır.</p>
+<h2 id="tr-security">Güvenlik</h2>
+<p>Uygulamanın tüm bağlantıları şifrelidir (HTTPS). Sunucumuza giden bağlantı ngrok'un sunucularına kadar şifrelidir; ngrok bağlantının şifresini orada çözer ve istekleri kendi şifreli tüneli üzerinden sunucumuza iletir, bu nedenle ngrok'un sistemleri istekleri okunabilir hâlde işler. Şifreniz Firebase'te kalır. Sunucumuza yalnızca biz giriş yapabiliriz; kendi bilgisayarımıza kopyaladığımız yedekler de şifreli bir diskte saklanır. Hiçbir sistem tamamen güvenli değildir, ancak verilerinizi makul ölçüde elimizden geldiğince iyi koruruz.</p>
+<h2 id="tr-retention">Verileri ne kadar süre saklıyoruz</h2>
+<p>Hesabınızı ve kayıtlarınızı, siz kayıtlarınızı ya da hesabınızı silene kadar saklarız. Sildiğiniz her şey veritabanımızdan hemen kaldırılır.</p>
+<p>Çektiğiniz ancak bir işlemle birlikte kaydetmediğiniz fiş fotoğrafları, yedi günü doldurduktan sonra, uygulama sunucumuza bir sonraki bağlandığında silinir.</p>
+<p>Sunucu arızalandığında hiçbir şeyin kaybolmaması için her gece veritabanımızın yedeğini alırız. Sunucuda ve kendi bilgisayarımızda son 14 günün yedeklerini, her ayın ilk gününe ait yedeği ise altı ay boyunca saklarız; yedekleri yalnızca hizmeti geri yüklemek için kullanırız. Hesabınız dâhil sildiğiniz her şey, yedekler de sırası gelip en geç altı ay sonra silinene kadar yedeklerde kalır.</p>
+<p>Sunucu kayıtları yalnızca hizmeti çalıştırmak ve güvenliğini sağlamak için gereken süre boyunca saklanır. Google, Expo ve ngrok aldıklarını kendi kurallarına göre saklar.</p>
+<h2 id="tr-delete">Hesabınızı silmek</h2>
+<p>Uygulamada Ayarlar'ı açın, Hesap bölümünde Hesabı Sil'e dokunun ve şifrenizle onaylayın. Bu adım hesabınızı ve tüm verilerini (işlemler ve fiş fotoğrafları, tekrarlayan işlemler, bütçeler, birikim hedefleri, kategoriler, kartlar ve taksitli alışverişler, borçlar, altın ve döviz kayıtları, hesaplar ve transferler ile profil fotoğrafınız) sunucumuzdan hemen, oturum açma hesabınızı da Firebase'ten siler. Ayrıca oturumunuzu kapatır; bu da cihazınızdaki kopyayı siler.</p>
+<p>Uygulamayı kullanmadan, hesabınızın e-posta adresinden <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> adresine yazın ve hesabınızı silmemizi isteyin. Hesabınızı 30 gün içinde siler ve bunu size teyit ederiz.</p>
+<p>Ayrıca uygulamada herhangi bir kaydı istediğiniz zaman tek tek silebilir, profil fotoğrafınızı da Profili Düzenle'de kaldırabilirsiniz. Bir şeyi sildikten sonra kopyaları yalnızca yedeklerimizde, en geç altı ay sonra süreleri dolana kadar kalır.</p>
+<h2 id="tr-rights">Haklarınız</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve sizin için geçerli olduğu durumlarda AB Genel Veri Koruma Tüzüğü (GDPR) uyarınca şunları yapabilirsiniz:</p>
+<ul><li>verilerinizi işleyip işlemediğimizi öğrenmek, bunlar hakkında bilgi ve bunların bir kopyasını almak</li><li>bunların düzeltilmesini ya da tamamlanmasını sağlamak</li><li>bunların silinmesini sağlamak</li><li>bunları nasıl kullandığımıza itiraz etmek ya da kullanımlarını sınırlamamızı istemek</li><li>bunları taşınabilir bir biçimde almak (ayrıca işlemlerinizi uygulamada CSV dosyası olarak dışa aktarabilirsiniz)</li><li>bunları Türkiye'de ve yurt dışında kimlerin aldığını öğrenmek, düzeltme ve silmelerin bu kişilere bildirilmesini sağlamak</li><li>yalnızca otomatik analiz sonucunda ortaya çıkan ve aleyhinize olan bir sonuca itiraz etmek (Budgetory bu tür kararlar vermez)</li><li>verilerinizin hukuka aykırı işlenmesi size zarar verirse tazminat talep etmek</li></ul>
+<p>Bu haklarınızı kullanmak için <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> adresine, tercihen hesabınızın e-posta adresinden yazın. 30 gün içinde yanıt veririz ve hesabın size ait olduğunu doğrulamanızı isteyebiliriz. Ayrıca Kişisel Verileri Koruma Kurumu'na ya da yaşadığınız yerdeki veri koruma makamına şikâyette bulunabilirsiniz.</p>
+<h2 id="tr-children">Çocuklar</h2>
+<p>Budgetory 13 yaşından küçük çocuklara yönelik değildir ve bu çocukların verilerini bilerek toplamayız. 13 yaşından küçük bir çocuğun hesap oluşturduğunu düşünüyorsanız bize e-posta gönderin; hesabı sileriz.</p>
+<h2 id="tr-changes">Bu politikadaki değişiklikler</h2>
+<p>Bu politikayı değiştirdiğimizde en üstteki tarihi günceller, yeni sürümü uygulamada ve web sitemizde yayımlarız. Bir değişiklik verilerinizin nasıl kullanıldığını etkiliyorsa bunu size ayrıca uygulamada ya da e-postayla bildiririz.</p>
+<h2 id="tr-contact">İletişim</h2>
+<p>Verilerinizle ilgili soru, talep ya da şikâyetleriniz için Uğurcan&nbsp;Eser'e <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> adresi üzerinden yazın.</p>
+</article>
+<article class="lang" id="de" lang="de">
+<h1>Datenschutzerklärung</h1>
+<p class="updated">Zuletzt aktualisiert: 17. Oktober 2026</p>
+<p>Budgetory ist eine App zur persönlichen Budgetplanung für iPhone und Android. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten die App und ihr Server verwenden und warum, wohin die Daten gelangen, wie lange sie gespeichert werden und welche Rechte Sie haben.</p>
+<h2 id="de-controller">Wer verantwortlich ist</h2>
+<p>Budgetory wird von Uğurcan&nbsp;Eser entwickelt, einem Einzelentwickler in der Türkei. Er entscheidet, wie Ihre personenbezogenen Daten verwendet werden, und trägt die Verantwortung dafür: Er ist der Verantwortliche (veri sorumlusu nach dem türkischen Gesetz über den Schutz personenbezogener Daten, KVKK). In dieser Datenschutzerklärung stehen „wir“ und „uns“ für ihn. Sie erreichen ihn unter <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+<h2 id="de-collect">Was wir erheben und warum</h2>
+<h3 id="de-account">Ihr Konto</h3>
+<p>Um Ihr Konto anzulegen und Sie anzumelden, verwenden wir Ihren Namen, Ihre E-Mail-Adresse und ein Passwort. Firebase Authentication, ein Dienst von Google, speichert diese Angaben und weist Ihrem Konto eine Nutzer-ID zu; Ihr Passwort bleibt bei Firebase und gelangt nie zu uns. Unser Server speichert Ihren Namen, Ihre E-Mail-Adresse und Ihre Nutzer-ID zusammen mit Ihren Daten, damit nur Sie darauf zugreifen können. Ihre E-Mail-Adresse wird außerdem verwendet, um Ihr Passwort zurückzusetzen und um bei einer Änderung die neue Adresse zu bestätigen.</p>
+<h3 id="de-records">Ihre Finanzdaten</h3>
+<p>Die App speichert, was Sie eingeben, damit sie Ihre Zahlen anzeigen, Salden, Budgets und Prognosen berechnen und diese Daten auf allen Ihren Geräten auf demselben Stand halten kann:</p>
+<ul><li>Einnahmen und Ausgaben mit ihren Beträgen, Währungen, Kategorien, Datumsangaben und Notizen, wie sich eine aufgeteilte Zahlung auf die Kategorien verteilt, und das Konto, zu dem jede Einnahme oder Ausgabe gehört</li><li>Budgets; wiederkehrende Transaktionen mit ihren Zeitplänen und Erinnerungseinstellungen; Kreditkarten mit ihren Abrechnungs- und Fälligkeitstagen sowie Erinnerungseinstellungen; und Käufe, die Sie in Raten bezahlen</li><li>Sparziele und das Geld, das Sie dafür zurücklegen oder daraus entnehmen</li><li>die Kategorien, die Sie hinzufügen</li><li>Schulden mit den Namen, die Sie den beteiligten Personen geben, ihren Beträgen, Datumsangaben, Fälligkeitsdaten, Erinnerungseinstellungen, Notizen und Zahlungen</li><li>Gold, Silber und Fremdwährungen, die Sie kaufen oder verkaufen, mit ihren Mengen, Datumsangaben, dem Betrag, den Sie bezahlt oder erhalten haben, und Notizen</li><li>Ihre Konten, etwa Bargeld, Bankkonten und Karten, mit ihren Namen, Arten, Währungen, Anfangssalden und der Angabe, welches davon Ihr Standardkonto ist, sowie das Geld, das Sie zwischen ihnen umbuchen</li></ul>
+<p>Bei wiederkehrenden Transaktionen und Raten sendet die App außerdem die Zeitzone Ihres Geräts; daran erkennt der Server, wann eine davon fällig ist. Budgetory fragt nie nach Kartennummern, Kontonummern oder Bankpasswörtern und verbindet sich nicht mit Ihrer Bank.</p>
+<h3 id="de-photos">Fotos</h3>
+<p>Sie können ein Profilfoto und zu jeder Transaktion bis zu fünf Belegfotos hinzufügen. Vor dem Senden verkleinert die App sie und erstellt sie neu, ohne die Angaben, die die Kamera darin speichert, etwa den Aufnahmeort; unser Server tut dasselbe noch einmal. Nur Sie können Ihre Belegfotos laden, und zwar mit Ihrer Anmeldung. Ihr Profilfoto wird unter einer langen, zufälligen Adresse gespeichert, die ohne Anmeldung funktioniert, damit die App es wie jedes andere Bild anzeigen kann: Wer die Adresse hätte, könnte das Foto sehen. Die Adresse ändert sich jedes Mal, wenn Sie ein neues Foto festlegen.</p>
+<h3 id="de-logs">Serverprotokolle</h3>
+<p>Unser Server und der Tunnel, der Anfragen zu ihm leitet, protokollieren jede Anfrage: die IP-Adresse, von der sie kam, den Zeitpunkt, was angefordert wurde, und das Ergebnis. Wir verwenden diese Protokolle nur, um den Dienst zu betreiben, Probleme zu beheben und ihn vor Missbrauch zu schützen.</p>
+<h2 id="de-basis">Warum wir Ihre Daten verwenden dürfen</h2>
+<p>Wir verwenden die Angaben zu Ihrem Konto, Ihre Finanzdaten und Ihre Fotos, um Ihnen die App bereitzustellen, für die Sie sich registriert haben (Art. 5 Abs. 2 lit. c KVKK; Art. 6 Abs. 1 lit. b DSGVO). Wir speichern Serverprotokolle und Backups und nutzen den Update-Dienst und den Belegscanner, weil wir ein berechtigtes Interesse daran haben, Budgetory funktionsfähig, sicher und auf dem neuesten Stand zu halten (Art. 5 Abs. 2 lit. f KVKK; Art. 6 Abs. 1 lit. f DSGVO).</p>
+<h2 id="de-device">Was auf Ihrem Gerät bleibt</h2>
+<p>Damit Ihre Daten sofort beim Öffnen der App angezeigt werden, auch wenn keine Verbindung besteht, speichert die App eine Kopie dessen, was sie zuletzt von unserem Server geladen hat, sowie die Belegfotos, die Sie hinzufügen oder öffnen. Beides liegt im Cache der App, der von Geräte-Backups ausgenommen ist, und beides wird gelöscht, wenn Sie sich abmelden.</p>
+<p>Für das Home-Bildschirm-Widget speichert die App eine Zusammenfassung Ihrer Zahlen auf Ihrem Gerät: für jeden Tag bis zum Ende des nächsten Monats, was Sie an diesem Tag ausgeben können und was von Ihrem Monatsbudget übrig ist, oder andernfalls die Ausgaben des Monats und den zu erwartenden Saldo am Monatsende. Beträge sind verborgen, solange die App-Sperre oder „Beträge verbergen“ eingeschaltet ist. Die Zusammenfassung wird nie an uns gesendet und wird gelöscht, wenn Sie sich abmelden.</p>
+<p>Firebase hält Sie auf Ihrem Gerät angemeldet, und die App speichert dort Ihre Einstellungen. Erinnerungen sind Benachrichtigungen, die die App auf Ihrem Gerät einplant; Budgetory nutzt keinen Push-Benachrichtigungsdienst.</p>
+<p>Wenn Sie die App-Sperre einschalten, prüft Ihr Gerät Ihr Gesicht, Ihren Fingerabdruck, Ihren Code oder Ihre Displaysperre. Die App erfährt nur, ob die Prüfung erfolgreich war; nichts über Ihr Gesicht, Ihren Fingerabdruck oder Ihren Code gelangt zur App oder zu uns.</p>
+<p>Unter Android erlaubt Budgetory dem System, die App in Ihrem Google-Konto zu sichern. Ein solches Backup kann Ihre Einstellungen, Ihre Anmeldung und die Zusammenfassung des Widgets enthalten, aber nicht die Kopie Ihrer Daten oder Ihre Fotos. Auf dem iPhone können iCloud- und Computer-Backups die Zusammenfassung des Widgets enthalten. Diese Backups bewahren Google oder Apple für Sie auf; wir haben keinen Zugriff darauf.</p>
+<h2 id="de-recipients">Wer außerdem Daten erhält</h2>
+<p>Für den Betrieb von Budgetory nutzen wir die folgenden Dienste. Firebase, Hetzner, ngrok und Expo sind unsere Dienstleister, das heißt, sie verarbeiten Daten in unserem Auftrag und nur, um ihren Dienst für uns zu erbringen.</p>
+<h3 id="de-firebase">Firebase Authentication (Google)</h3>
+<p>Speichert Ihren Namen, Ihre E-Mail-Adresse, Ihr Passwort und Ihre Nutzer-ID, meldet Sie an und versendet die E-Mails zum Zurücksetzen Ihres Passworts oder zum Bestätigen einer neuen E-Mail-Adresse. Der Dienst sieht Ihre IP-Adresse, wenn die App ihn kontaktiert.</p>
+<h3 id="de-server">Unser Server</h3>
+<p>Die Datenbank von Budgetory läuft auf einem virtuellen privaten Server in Deutschland, den wir bei der Hetzner Online GmbH mieten. Die App erreicht ihn über einen Tunnel, den ngrok, Inc. betreibt. Beide verarbeiten Ihre Daten nur, damit der Server funktionieren kann.</p>
+<h3 id="de-expo">App-Updates (Expo)</h3>
+<p>Bei jedem Start fragt die App den Update-Dienst von Expo (EAS Update), ob eine neuere Version ihres Codes verfügbar ist, damit Fehlerbehebungen Sie zwischen den Veröffentlichungen in den App-Stores erreichen können. Die Anfrage enthält eine zufällige Kennung, die die App dafür auf Ihrem Gerät erzeugt, die Plattform (iOS oder Android), die Laufzeitversion (runtime version) der App und die Kennungen ihrer aktuellen Updates sowie, falls die App beim letzten Mal nicht starten konnte, den Fehlertext. Expo verwendet die Kennung, um die Geräte zu zählen, die es bedient, und sieht außerdem Ihre IP-Adresse. Die Anfrage enthält nichts über Ihr Konto oder Ihre Zahlen.</p>
+<h3 id="de-rates">Wechselkurse</h3>
+<p>Um Währungen umzurechnen und Gold und Silber zu bewerten, lädt die App die aktuellen Kurse von Frankfurter (api.frankfurter.app) und aus dem kostenlosen Datensatz currency-api (über cdn.jsdelivr.net oder über latest.currency-api.pages.dev, falls das fehlschlägt). Diese Anfragen enthalten nichts über Sie oder Ihre Zahlen: Nur Ihre IP-Adresse gelangt zu diesen Diensten, wie bei jeder Anfrage im Internet.</p>
+<h3 id="de-scanner-android">Belege scannen unter Android (Google ML Kit)</h3>
+<p>Die App nutzt den ML Kit-Dokumentenscanner von Google, der in den Google Play-Diensten auf Ihrem Gerät läuft. Die Bilder, die er scannt, bleiben auf Ihrem Gerät und gehen nur an die App. Wie alle ML Kit-Funktionen sendet er Informationen für Diagnose und Nutzungsanalyse an Google: Geräteinformationen (etwa Hersteller, Modell, Version und Build des Betriebssystems sowie verfügbare Hardware für maschinelles Lernen), App-Informationen (Paketname und App-Version), eine Gerätekennung und für jede Installation erzeugte Kennungen, Leistungsmesswerte (etwa die Latenz), die Konfiguration des Scanners (etwa Bildformat und Auflösung), Eingabe- und Ausgabegrößen, seine Version, die Art jedes Ereignisses (etwa das Starten des Scanners oder das Scannen) und Fehlercodes. Laut Google werden diese Informationen über eine verschlüsselte Verbindung (HTTPS) gesendet und nicht an Dritte weitergegeben. Google verwendet diese Informationen nach seinen eigenen Bedingungen und seiner eigenen Datenschutzerklärung, nicht in unserem Auftrag.</p>
+<h3 id="de-scanner-ios">Belege scannen auf dem iPhone</h3>
+<p>Die App nutzt den Dokumentenscanner, der Teil von iOS ist (VisionKit). Er arbeitet vollständig auf Ihrem iPhone und sendet nichts.</p>
+<h3 id="de-stores">App-Stores</h3>
+<p>Über den App Store und Google Play erhalten wir von Apple und Google Statistiken zu Downloads und, wenn Sie es auf Ihrem Gerät erlaubt haben, Absturzberichte, aus denen nicht hervorgeht, wer Sie sind. Wir verwenden sie nur, um Probleme zu beheben.</p>
+<h3 id="de-sharing">Wenn Sie etwas teilen</h3>
+<p>Wenn Sie Ihre Transaktionen als CSV exportieren, ein Belegfoto teilen oder uns eine E-Mail schreiben, gelangen die Daten dorthin, wohin Sie sie senden.</p>
+<h2 id="de-abroad">Daten außerhalb der Türkei</h2>
+<p>Google, Expo und ngrok haben ihren Sitz in den USA und können Daten dort und in anderen Ländern verarbeiten, und unser Server steht in Deutschland. Ihre Daten werden daher außerhalb der Türkei verarbeitet, auch in Ländern, deren Datenschutzgesetze sich von denen der Türkei oder Ihres eigenen Landes unterscheiden.</p>
+<h2 id="de-not">Was wir nicht tun</h2>
+<p>Budgetory zeigt keine Werbung und enthält keine Tools für Analyse, Tracking oder Absturzberichte. Wir verkaufen Ihre Daten nicht, geben sie nicht zu Werbezwecken weiter und nutzen sie nicht, um ein Profil von Ihnen zu erstellen. Die App greift nicht auf Ihre Kontakte, Ihren Standort oder Ihr Mikrofon zu und nutzt die Kamera und Ihre Fotos nur, wenn Sie ein Foto aufnehmen oder auswählen möchten.</p>
+<h2 id="de-security">Sicherheit</h2>
+<p>Alle Verbindungen der App sind verschlüsselt (HTTPS). Die Verbindung zu unserem Server ist bis zu den Servern von ngrok verschlüsselt; ngrok entschlüsselt sie dort und leitet sie über seinen eigenen verschlüsselten Tunnel an unseren Server weiter, sodass die Systeme von ngrok die Anfragen in lesbarer Form verarbeiten. Ihr Passwort bleibt bei Firebase. Nur wir können uns an unserem Server anmelden, und die Backups, die wir auf unseren eigenen Computer kopieren, liegen auf einer verschlüsselten Festplatte. Kein System ist vollkommen sicher, aber wir schützen Ihre Daten so gut, wie es uns vernünftigerweise möglich ist.</p>
+<h2 id="de-retention">Wie lange wir Daten speichern</h2>
+<p>Wir speichern Ihr Konto und Ihre Finanzdaten, bis Sie diese oder Ihr Konto löschen. Alles, was Sie löschen, wird sofort aus unserer Datenbank entfernt.</p>
+<p>Belegfotos, die Sie aufgenommen, aber nicht mit einer Transaktion gespeichert haben, werden gelöscht, sobald sie sieben Tage alt sind, und zwar beim nächsten Mal, wenn sich die App mit unserem Server verbindet.</p>
+<p>Jede Nacht kopieren wir unsere Datenbank in ein Backup, damit nichts verloren geht, falls der Server ausfällt. Wir speichern die Backups der letzten 14 Tage sowie das Backup vom ersten Tag jedes Monats sechs Monate lang, und zwar auf dem Server und auf unserem eigenen Computer, und verwenden sie nur, um den Dienst wiederherzustellen. Alles, was Sie löschen, auch Ihr Konto, bleibt in den Backups erhalten, bis diese ihrerseits gelöscht werden, spätestens sechs Monate später.</p>
+<p>Serverprotokolle werden nur so lange aufbewahrt, wie es nötig ist, um den Dienst zu betreiben und abzusichern. Google, Expo und ngrok speichern das, was sie erhalten, nach ihren eigenen Regeln.</p>
+<h2 id="de-delete">Ihr Konto löschen</h2>
+<p>Öffnen Sie in der App „Einstellungen“, tippen Sie unter „Konto“ auf „Konto löschen“ und bestätigen Sie mit Ihrem Passwort. Dadurch werden Ihr Konto und alle zugehörigen Daten sofort von unserem Server gelöscht (Transaktionen und Belegfotos, wiederkehrende Transaktionen, Budgets, Sparziele, Kategorien, Karten und Ratenkäufe, Schulden, Gold- und Währungseinträge, Konten und Umbuchungen sowie Ihr Profilfoto), ebenso Ihr Anmeldekonto bei Firebase. Außerdem werden Sie abgemeldet, wodurch die Kopie auf Ihrem Gerät gelöscht wird.</p>
+<p>Ohne die App schreiben Sie von der Adresse Ihres Kontos eine E-Mail an <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> und bitten uns, das Konto zu löschen. Wir löschen es und bestätigen dies innerhalb von 30 Tagen.</p>
+<p>Sie können außerdem jederzeit jeden einzelnen Eintrag in der App löschen und Ihr Profilfoto unter „Profil bearbeiten“ entfernen. Nach jeder Löschung bleiben Kopien nur noch in unseren Backups, bis diese nach spätestens sechs Monaten turnusmäßig gelöscht werden.</p>
+<h2 id="de-rights">Ihre Rechte</h2>
+<p>Nach dem türkischen Gesetz Nr. 6698 über den Schutz personenbezogener Daten (KVKK) und der EU-Datenschutz-Grundverordnung (DSGVO), soweit diese für Sie gilt, können Sie:</p>
+<ul><li>erfahren, ob wir Ihre Daten verarbeiten, und Auskunft über sie sowie eine Kopie davon erhalten</li><li>sie berichtigen oder vervollständigen lassen</li><li>sie löschen lassen</li><li>Widerspruch dagegen einlegen, wie wir sie verwenden, oder uns bitten, ihre Verwendung einzuschränken</li><li>sie in einem übertragbaren Format erhalten (in der App können Sie Ihre Transaktionen auch als CSV exportieren)</li><li>erfahren, wer sie in der Türkei und im Ausland erhält, und Berichtigungen und Löschungen an die Empfänger weitergeben lassen</li><li>einem Ergebnis zu Ihrem Nachteil widersprechen, das allein auf automatisierter Analyse beruht (Budgetory trifft keine solchen Entscheidungen)</li><li>Schadenersatz verlangen, wenn Ihnen durch rechtswidrige Verarbeitung ein Schaden entsteht</li></ul>
+<p>Um diese Rechte auszuüben, schreiben Sie eine E-Mail an <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>, am besten von der Adresse Ihres Kontos. Wir antworten innerhalb von 30 Tagen und können Sie bitten zu bestätigen, dass das Konto Ihnen gehört. Sie können sich auch bei der türkischen Datenschutzbehörde (Kişisel Verileri Koruma Kurumu) oder bei der Datenschutzbehörde an Ihrem Wohnort beschweren.</p>
+<h2 id="de-children">Kinder</h2>
+<p>Budgetory richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine Daten von ihnen. Wenn Sie glauben, dass ein Kind unter 13 Jahren ein Konto erstellt hat, schreiben Sie uns eine E-Mail, dann löschen wir das Konto.</p>
+<h2 id="de-changes">Änderungen dieser Datenschutzerklärung</h2>
+<p>Wenn wir diese Datenschutzerklärung ändern, aktualisieren wir das Datum oben und veröffentlichen die neue Fassung in der App und auf unserer Website. Betrifft eine Änderung die Art, wie Ihre Daten verwendet werden, informieren wir Sie außerdem in der App oder per E-Mail.</p>
+<h2 id="de-contact">Kontakt</h2>
+<p>Bei Fragen, Anliegen oder Beschwerden zu Ihren Daten schreiben Sie an Uğurcan&nbsp;Eser unter <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+<article class="lang" id="fr" lang="fr">
+<h1>Politique de confidentialité</h1>
+<p class="updated">Dernière mise à jour : 17 octobre 2026</p>
+<p>Budgetory est une app de budget personnel pour iPhone et Android. Cette politique explique quelles données personnelles l'app et son serveur utilisent et pourquoi, où vont ces données, combien de temps elles sont conservées et quels sont vos droits.</p>
+<h2 id="fr-controller">Qui est responsable</h2>
+<p>Budgetory est réalisée par Uğurcan&nbsp;Eser, un développeur indépendant établi en Turquie. Il décide de la manière dont vos données personnelles sont utilisées et en est responsable : il est le responsable du traitement (veri sorumlusu au sens de la loi turque sur la protection des données personnelles, la KVKK). Dans cette politique, « nous » le désigne. Vous pouvez le contacter à l'adresse <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+<h2 id="fr-collect">Ce que nous collectons et pourquoi</h2>
+<h3 id="fr-account">Votre compte</h3>
+<p>Pour créer votre compte et vous connecter, nous utilisons votre nom, votre adresse e-mail et un mot de passe. Firebase Authentication, un service de Google, les conserve et attribue à votre compte un identifiant utilisateur ; votre mot de passe reste chez Firebase et ne nous parvient jamais. Notre serveur conserve votre nom, votre adresse e-mail et votre identifiant utilisateur avec vos données, pour que vous seul puissiez y accéder. Votre adresse e-mail sert aussi à réinitialiser votre mot de passe et à confirmer une nouvelle adresse quand vous la changez.</p>
+<h3 id="fr-records">Vos données financières</h3>
+<p>L'app conserve ce que vous saisissez afin de pouvoir afficher vos chiffres, calculer les soldes, les budgets et les prévisions, et les garder identiques sur tous vos appareils :</p>
+<ul><li>les revenus et dépenses, avec leurs montants, devises, catégories, dates et notes, la répartition d'un paiement entre plusieurs catégories, et le compte auquel chacun est rattaché</li><li>les budgets ; les transactions récurrentes, avec leur calendrier et vos préférences de rappel ; les cartes de crédit, avec leurs jours d'arrêté et d'échéance et vos préférences de rappel ; et les achats que vous payez en plusieurs fois</li><li>les objectifs d'épargne et l'argent que vous mettez de côté pour eux ou que vous en retirez</li><li>les catégories que vous ajoutez</li><li>les dettes, avec les noms que vous donnez aux personnes concernées, leurs montants, dates, dates d'échéance, préférences de rappel, notes et paiements</li><li>l'or, l'argent et les devises que vous achetez ou vendez, avec leurs quantités, leurs dates, ce que vous avez payé ou reçu, et vos notes</li><li>vos comptes, comme les espèces, les comptes bancaires et les cartes, avec leurs noms, types, devises, soldes initiaux et le choix de votre compte par défaut, ainsi que l'argent que vous transférez entre eux</li></ul>
+<p>Pour les transactions récurrentes et les achats en plusieurs fois, l'app envoie aussi le fuseau horaire de votre appareil, qui indique au serveur quand tombe une échéance. Budgetory ne demande jamais de numéro de carte, de numéro de compte bancaire ni de mot de passe bancaire, et ne se connecte pas à votre banque.</p>
+<h3 id="fr-photos">Photos</h3>
+<p>Vous pouvez ajouter une photo de profil, ainsi que jusqu'à cinq photos de reçus à chaque transaction. Avant de les envoyer, l'app réduit leur taille et les réenregistre sans les informations que l'appareil photo y stocke, comme le lieu où elles ont été prises ; notre serveur refait ensuite la même chose. Vous seul pouvez charger vos photos de reçus, en étant connecté à votre compte. Votre photo de profil est conservée à une longue adresse aléatoire, accessible sans se connecter, afin que l'app puisse l'afficher comme n'importe quelle autre image : quiconque aurait cette adresse pourrait voir la photo. L'adresse change chaque fois que vous choisissez une nouvelle photo.</p>
+<h3 id="fr-logs">Journaux du serveur</h3>
+<p>Notre serveur et le tunnel qui lui transmet les requêtes enregistrent chaque requête : l'adresse IP d'où elle provient, l'heure, ce qui a été demandé et le résultat. Nous n'utilisons ces enregistrements que pour faire fonctionner le service, résoudre les problèmes et le protéger contre les abus.</p>
+<h2 id="fr-basis">Pourquoi nous pouvons utiliser vos données</h2>
+<p>Nous utilisons les informations de votre compte, vos données financières et vos photos afin de vous fournir l'app pour laquelle vous avez créé un compte (article 5, paragraphe 2, point c, de la KVKK ; article 6, paragraphe 1, point b, du RGPD). Nous conservons des journaux du serveur et des sauvegardes, et utilisons le service de mise à jour et le scanner de reçus, car nous avons un intérêt légitime à assurer le fonctionnement, la sécurité et la mise à jour de Budgetory (article 5, paragraphe 2, point f, de la KVKK ; article 6, paragraphe 1, point f, du RGPD).</p>
+<h2 id="fr-device">Ce qui reste sur votre appareil</h2>
+<p>Pour que vos données s'affichent dès que vous ouvrez l'app, même sans connexion, celle-ci conserve une copie de ce qu'elle a chargé en dernier depuis notre serveur, ainsi que les photos de reçus que vous ajoutez ou ouvrez. Les deux se trouvent dans le cache de l'app, que les sauvegardes de l'appareil excluent, et les deux sont supprimées quand vous vous déconnectez.</p>
+<p>Pour le widget de l'écran d'accueil, l'app conserve sur votre appareil un résumé de vos chiffres : pour chaque jour jusqu'à la fin du mois prochain, ce que vous pouvez dépenser ce jour-là et ce qui reste de votre budget mensuel, ou, à défaut, les dépenses du mois et le solde attendu en fin de mois. Les montants sont masqués tant que le verrouillage de l'app ou « Masquer les montants » est activé. Le résumé ne nous est jamais envoyé et il est effacé quand vous vous déconnectez.</p>
+<p>Firebase garde votre session ouverte sur votre appareil, et l'app y conserve vos paramètres. Les rappels sont des notifications que l'app programme sur votre appareil ; Budgetory n'utilise pas de service de notifications push.</p>
+<p>Si vous activez le verrouillage de l'app, votre appareil vérifie votre visage, votre empreinte digitale, votre code ou votre verrouillage d'écran. L'app apprend uniquement si la vérification a réussi ; rien qui concerne votre visage, votre empreinte digitale ou votre code ne parvient ni à l'app ni à nous.</p>
+<p>Sur Android, Budgetory autorise le système à sauvegarder l'app dans votre compte Google. Une telle sauvegarde peut inclure vos paramètres, votre session de connexion et le résumé du widget, mais pas la copie de vos données ni vos photos. Sur iPhone, les sauvegardes iCloud et sur ordinateur peuvent inclure le résumé du widget. Ces sauvegardes sont conservées pour vous par Google ou Apple ; nous ne pouvons pas y accéder.</p>
+<h2 id="fr-recipients">Qui d'autre reçoit des données</h2>
+<p>Nous utilisons les services suivants pour faire fonctionner Budgetory. Firebase, Hetzner, ngrok et Expo sont nos prestataires : ils traitent des données pour notre compte, uniquement afin de nous fournir leur service.</p>
+<h3 id="fr-firebase">Firebase Authentication (Google)</h3>
+<p>Conserve votre nom, votre adresse e-mail, votre mot de passe et votre identifiant utilisateur, vous connecte, et envoie les e-mails permettant de réinitialiser votre mot de passe ou de confirmer une nouvelle adresse e-mail. Il voit votre adresse IP lorsque l'app le contacte.</p>
+<h3 id="fr-server">Notre serveur</h3>
+<p>La base de données de Budgetory fonctionne sur un serveur privé virtuel situé en Allemagne, que nous louons auprès de Hetzner Online GmbH. L'app y accède par un tunnel géré par ngrok, Inc. Tous deux ne traitent vos données que pour permettre au serveur de fonctionner.</p>
+<h3 id="fr-expo">Mises à jour de l'app (Expo)</h3>
+<p>À chaque démarrage, l'app demande au service de mise à jour d'Expo (EAS Update) si une version plus récente de son code est disponible, afin que les correctifs puissent vous parvenir entre deux versions publiées dans les boutiques d'applications. La requête contient un identifiant aléatoire que l'app crée à cet effet sur votre appareil, la plateforme (iOS ou Android), la version d'exécution (runtime version) de l'app et les identifiants de ses mises à jour actuelles, ainsi que, si l'app n'a pas réussi à démarrer la fois précédente, le texte de l'erreur. Expo utilise l'identifiant pour compter les appareils qu'il dessert, et voit aussi votre adresse IP. La requête ne contient rien sur votre compte ni sur vos chiffres.</p>
+<h3 id="fr-rates">Taux de change</h3>
+<p>Pour convertir les devises et estimer la valeur de l'or et de l'argent, l'app télécharge les derniers taux depuis Frankfurter (api.frankfurter.app) et depuis le jeu de données gratuit currency-api (via cdn.jsdelivr.net, ou latest.currency-api.pages.dev en cas d'échec). Ces requêtes ne contiennent rien sur vous ni sur vos chiffres : seule votre adresse IP parvient à ces services, comme pour toute requête sur internet.</p>
+<h3 id="fr-scanner-android">Numérisation des reçus sur Android (Google ML Kit)</h3>
+<p>L'app utilise le scanner de documents ML Kit de Google, qui s'exécute dans les services Google Play sur votre appareil. Les images qu'il numérise restent sur votre appareil et ne sont transmises qu'à l'app. Comme toutes les fonctionnalités ML Kit, il envoie à Google des informations à des fins de diagnostic et d'analyse d'utilisation : des informations sur l'appareil (comme le fabricant, le modèle, la version et le numéro de build du système d'exploitation, et le matériel d'apprentissage automatique disponible), des informations sur l'app (nom du package et version de l'app), un identifiant d'appareil et des identifiants créés pour chaque installation, des mesures de performances (comme la latence), la configuration du scanner (comme le format et la résolution de l'image), la taille des entrées et des sorties, sa version, le type de chaque événement (comme le lancement du scanner ou une numérisation) et les codes d'erreur. Google indique envoyer ces informations via une connexion chiffrée (HTTPS) et ne pas les transmettre à des tiers. Google utilise ces informations selon ses propres conditions et sa propre politique de confidentialité, et non pour notre compte.</p>
+<h3 id="fr-scanner-ios">Numérisation des reçus sur iPhone</h3>
+<p>L'app utilise le scanner de documents intégré à iOS (VisionKit). Il fonctionne entièrement sur votre iPhone et n'envoie rien.</p>
+<h3 id="fr-stores">Boutiques d'applications</h3>
+<p>Apple et Google, via l'App Store et Google Play, nous fournissent des statistiques sur les téléchargements et, si vous l'avez autorisé sur votre appareil, des rapports de plantage qui ne permettent pas de vous identifier. Nous ne les utilisons que pour corriger des problèmes.</p>
+<h3 id="fr-sharing">Quand vous partagez quelque chose</h3>
+<p>Si vous exportez vos transactions en CSV, partagez une photo de reçu ou nous écrivez par e-mail, les données vont là où vous les envoyez.</p>
+<h2 id="fr-abroad">Données hors de Turquie</h2>
+<p>Google, Expo et ngrok sont établis aux États-Unis et peuvent traiter des données là-bas et dans d'autres pays, et notre serveur se trouve en Allemagne. Vos données sont donc traitées hors de Turquie, y compris dans des pays dont les lois sur la protection des données diffèrent de celles de la Turquie ou de votre propre pays.</p>
+<h2 id="fr-not">Ce que nous ne faisons pas</h2>
+<p>Budgetory n'affiche aucune publicité et ne contient aucun outil d'analyse, de suivi ou de rapport de plantage. Nous ne vendons pas vos données, ne les partageons pas à des fins publicitaires et ne les utilisons pas pour établir un profil vous concernant. L'app n'accède ni à vos contacts, ni à votre position, ni à votre micro, et n'utilise l'appareil photo et vos photos que lorsque vous choisissez de prendre ou de sélectionner une photo.</p>
+<h2 id="fr-security">Sécurité</h2>
+<p>Toutes les connexions de l'app sont chiffrées (HTTPS). La connexion à notre serveur est chiffrée jusqu'aux serveurs de ngrok ; ngrok la déchiffre sur place et la transmet à notre serveur par son propre tunnel chiffré, si bien que les systèmes de ngrok traitent les requêtes en clair. Votre mot de passe reste chez Firebase. Nous seuls pouvons nous connecter à notre serveur, et les sauvegardes que nous copions sur notre propre ordinateur sont conservées sur un disque chiffré. Aucun système n'est totalement sûr, mais nous protégeons vos données aussi bien que nous le pouvons raisonnablement.</p>
+<h2 id="fr-retention">Combien de temps nous conservons les données</h2>
+<p>Nous conservons votre compte et vos données financières jusqu'à ce que vous les supprimiez ou que vous supprimiez votre compte. Tout ce que vous supprimez est immédiatement effacé de notre base de données.</p>
+<p>Les photos de reçus que vous avez prises sans les enregistrer avec une transaction sont supprimées au bout de sept jours, lors de la prochaine connexion de l'app à notre serveur.</p>
+<p>Chaque nuit, nous copions notre base de données dans une sauvegarde, afin que rien ne soit perdu en cas de panne du serveur. Nous conservons les sauvegardes des 14 derniers jours, ainsi que celle du premier jour de chaque mois pendant six mois, sur le serveur et sur notre propre ordinateur, et nous ne les utilisons que pour restaurer le service. Tout ce que vous supprimez, y compris votre compte, reste dans les sauvegardes jusqu'à ce qu'elles soient à leur tour supprimées, au plus tard six mois après.</p>
+<p>Les journaux du serveur ne sont conservés que le temps nécessaire pour faire fonctionner et sécuriser le service. Google, Expo et ngrok conservent ce qu'ils reçoivent selon leurs propres règles.</p>
+<h2 id="fr-delete">Supprimer votre compte</h2>
+<p>Dans l'app, ouvrez « Paramètres », touchez « Supprimer le compte » sous « Compte » et confirmez avec votre mot de passe. Cela supprime immédiatement de notre serveur votre compte et toutes ses données (transactions et photos de reçus, transactions récurrentes, budgets, objectifs d'épargne, catégories, cartes et achats en plusieurs fois, dettes, entrées d'or et de devises, comptes et transferts, et votre photo de profil), ainsi que votre compte de connexion chez Firebase. Cela vous déconnecte également, ce qui supprime la copie conservée sur votre appareil.</p>
+<p>Sans l'app, écrivez à <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> depuis l'adresse de votre compte et demandez-nous de le supprimer. Nous le supprimerons et vous le confirmerons dans les 30 jours.</p>
+<p>Vous pouvez aussi supprimer individuellement n'importe quel élément dans l'app, à tout moment, et retirer votre photo de profil dans « Modifier le profil ». Après toute suppression, il ne subsiste de copies que dans nos sauvegardes, jusqu'à ce que celles-ci expirent, au plus tard six mois après.</p>
+<h2 id="fr-rights">Vos droits</h2>
+<p>En vertu de la loi turque n° 6698 sur la protection des données personnelles (KVKK) et, lorsqu'il s'applique à vous, du règlement général sur la protection des données (RGPD) de l'Union européenne, vous pouvez :</p>
+<ul><li>savoir si nous traitons vos données, et obtenir des informations à leur sujet ainsi qu'une copie de celles-ci</li><li>les faire rectifier ou compléter</li><li>les faire supprimer</li><li>vous opposer à la manière dont nous les utilisons, ou nous demander d'en limiter l'utilisation</li><li>les recevoir dans un format portable (vous pouvez aussi exporter vos transactions en CSV dans l'app)</li><li>savoir qui les reçoit, en Turquie et à l'étranger, et faire transmettre à ces destinataires les rectifications et les suppressions</li><li>vous opposer à un résultat qui vous est défavorable et qui découle uniquement d'une analyse automatisée (Budgetory ne prend aucune décision de ce type)</li><li>demander réparation si un traitement illicite vous cause un préjudice</li></ul>
+<p>Pour exercer ces droits, écrivez à <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>, de préférence depuis l'adresse de votre compte. Nous vous répondrons dans les 30 jours et pourrons vous demander de confirmer que le compte vous appartient. Vous pouvez aussi déposer une réclamation auprès de l'autorité turque de protection des données (Kişisel Verileri Koruma Kurumu) ou de l'autorité de protection des données de votre lieu de résidence.</p>
+<h2 id="fr-children">Enfants</h2>
+<p>Budgetory ne s'adresse pas aux enfants de moins de 13 ans, et nous ne collectons pas sciemment leurs données. Si vous pensez qu'un enfant de moins de 13 ans a créé un compte, envoyez-nous un e-mail et nous supprimerons ce compte.</p>
+<h2 id="fr-changes">Modifications de cette politique</h2>
+<p>Lorsque nous modifions cette politique, nous mettons à jour la date indiquée en haut et publions la nouvelle version dans l'app et sur notre site web. Si une modification a une incidence sur la façon dont vos données sont utilisées, nous vous en informerons aussi dans l'app ou par e-mail.</p>
+<h2 id="fr-contact">Contact</h2>
+<p>Pour toute question, demande ou réclamation concernant vos données, écrivez à Uğurcan&nbsp;Eser à l'adresse <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+<article class="lang" id="es" lang="es">
+<h1>Política de privacidad</h1>
+<p class="updated">Última actualización: 17 de octubre de 2026</p>
+<p>Budgetory es una app de presupuesto personal para iPhone y Android. Esta política explica qué datos personales usan la app y su servidor y por qué, adónde van esos datos, cuánto tiempo se conservan y cuáles son tus derechos.</p>
+<h2 id="es-controller">Quién es el responsable</h2>
+<p>Budgetory es obra de Uğurcan&nbsp;Eser, un desarrollador individual en Turquía. Él decide cómo se usan tus datos personales y responde de ellos: es el responsable del tratamiento (veri sorumlusu según la Ley turca de Protección de Datos Personales, la KVKK). En esta política, «nosotros» y «nos» se refieren a él. Puedes ponerte en contacto con él en <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+<h2 id="es-collect">Qué recopilamos y por qué</h2>
+<h3 id="es-account">Tu cuenta</h3>
+<p>Para crear tu cuenta y que puedas iniciar sesión, usamos tu nombre, tu dirección de correo electrónico y una contraseña. Firebase Authentication, un servicio de Google, los guarda y asigna a tu cuenta un ID de usuario; tu contraseña se queda en Firebase y nunca nos llega. Nuestro servidor guarda tu nombre, tu dirección de correo electrónico y tu ID de usuario junto con tus datos, para que solo tú puedas acceder a ellos. Tu dirección de correo electrónico también se usa para restablecer tu contraseña y para confirmar una dirección nueva cuando la cambias.</p>
+<h3 id="es-records">Tus registros financieros</h3>
+<p>La app guarda lo que introduces para poder mostrar tus cifras, calcular saldos, presupuestos y previsiones, y mantenerlos iguales en todos tus dispositivos:</p>
+<ul><li>ingresos y gastos, con sus importes, monedas, categorías, fechas y notas, cómo se reparte un pago dividido entre categorías, y la cuenta a la que pertenece cada uno</li><li>presupuestos; transacciones recurrentes, con su programación y sus opciones de recordatorio; tarjetas de crédito, con sus días de corte y de pago y sus opciones de recordatorio; y compras que pagas a plazos</li><li>metas de ahorro y el dinero que apartas para ellas o que retiras de ellas</li><li>las categorías que añades</li><li>deudas, con los nombres que das a las personas implicadas, sus importes, fechas, fechas de vencimiento, opciones de recordatorio, notas y pagos</li><li>oro, plata y divisas que compras o vendes, con sus cantidades, fechas, lo que pagaste o recibiste, y notas</li><li>tus cuentas, como efectivo, cuentas bancarias y tarjetas, con sus nombres, tipos, monedas, saldos iniciales y cuál es tu cuenta predeterminada, y el dinero que mueves entre ellas</li></ul>
+<p>Para las transacciones recurrentes y las cuotas, la app también envía la zona horaria de tu dispositivo, que le indica al servidor cuándo vence cada una. Budgetory nunca pide números de tarjeta, números de cuenta bancaria ni contraseñas bancarias, y no se conecta a tu banco.</p>
+<h3 id="es-photos">Fotos</h3>
+<p>Puedes añadir una foto de perfil, y hasta cinco fotos de recibos a cada transacción. Antes de enviarlas, la app reduce su tamaño y las guarda de nuevo sin lo que la cámara almacena en ellas, como el lugar donde se tomaron; nuestro servidor vuelve a hacer lo mismo. Solo tú puedes cargar tus fotos de recibos, con tu sesión iniciada. Tu foto de perfil se guarda en una dirección larga y aleatoria que funciona sin iniciar sesión, para que la app pueda mostrarla como cualquier otra imagen: cualquiera que tuviera la dirección podría ver la foto. La dirección cambia cada vez que pones una foto nueva.</p>
+<h3 id="es-logs">Registros del servidor</h3>
+<p>Nuestro servidor y el túnel por el que le llegan las solicitudes registran cada solicitud: la dirección IP de la que procede, la hora, lo que se pidió y el resultado. Usamos estos registros solo para mantener el servicio en funcionamiento, solucionar problemas y protegerlo de abusos.</p>
+<h2 id="es-basis">Por qué podemos usar tus datos</h2>
+<p>Usamos los datos de tu cuenta, tus registros financieros y tus fotos para ofrecerte la app en la que te registraste (artículo 5.2.c de la KVKK; artículo 6.1.b del RGPD). Conservamos registros del servidor y copias de seguridad, y usamos el servicio de actualizaciones y el escáner de recibos, porque tenemos un interés legítimo en que Budgetory siga funcionando, sea seguro y esté al día (artículo 5.2.f de la KVKK; artículo 6.1.f del RGPD).</p>
+<h2 id="es-device">Qué se queda en tu dispositivo</h2>
+<p>Para que tus datos se muestren en cuanto abres la app, también sin conexión, la app guarda una copia de lo que cargó por última vez desde nuestro servidor, y las fotos de recibos que añades o abres. Ambas están en la caché de la app, que las copias de seguridad del dispositivo no incluyen, y ambas se eliminan cuando cierras sesión.</p>
+<p>Para el widget de la pantalla de inicio, la app guarda en tu dispositivo un resumen de tus cifras: para cada día hasta el final del mes que viene, lo que puedes gastar ese día y lo que queda de tu presupuesto mensual o, si no, los gastos del mes y el saldo previsto a final de mes. Los importes se ocultan mientras está activado el bloqueo de la app u «Ocultar importes». El resumen nunca se nos envía y se borra cuando cierras sesión.</p>
+<p>Firebase mantiene tu sesión iniciada en tu dispositivo, y la app guarda allí tus ajustes. Los recordatorios son notificaciones que la app programa en tu dispositivo; Budgetory no usa ningún servicio de notificaciones push.</p>
+<p>Si activas el bloqueo de la app, tu dispositivo comprueba tu cara, tu huella, tu código o tu bloqueo de pantalla. La app solo sabe si la comprobación ha salido bien; nada sobre tu cara, tu huella o tu código llega ni a la app ni a nosotros.</p>
+<p>En Android, Budgetory permite que el sistema haga una copia de seguridad de la app en tu cuenta de Google. Esa copia de seguridad puede incluir tus ajustes, tu sesión iniciada y el resumen del widget, pero no la copia de tus datos ni tus fotos. En iPhone, las copias de seguridad en iCloud y en el ordenador pueden incluir el resumen del widget. Google o Apple guardan estas copias de seguridad para ti; nosotros no podemos acceder a ellas.</p>
+<h2 id="es-recipients">Quién más recibe datos</h2>
+<p>Usamos los siguientes servicios para que Budgetory funcione. Firebase, Hetzner, ngrok y Expo son nuestros proveedores de servicios: tratan datos por cuenta nuestra, solo para prestarnos su servicio.</p>
+<h3 id="es-firebase">Firebase Authentication (Google)</h3>
+<p>Guarda tu nombre, tu dirección de correo electrónico, tu contraseña y tu ID de usuario, inicia tu sesión y envía los correos para restablecer tu contraseña o confirmar una nueva dirección de correo electrónico. Ve tu dirección IP cuando la app se conecta a él.</p>
+<h3 id="es-server">Nuestro servidor</h3>
+<p>La base de datos de Budgetory se ejecuta en un servidor privado virtual en Alemania que alquilamos a Hetzner Online GmbH. La app se conecta a él a través de un túnel gestionado por ngrok, Inc. Ambos manejan tus datos solo para que el servidor pueda funcionar.</p>
+<h3 id="es-expo">Actualizaciones de la app (Expo)</h3>
+<p>Cada vez que se inicia, la app pregunta al servicio de actualizaciones de Expo (EAS Update) si hay disponible una versión más reciente de su código, para que las correcciones puedan llegarte entre las versiones publicadas en las tiendas de aplicaciones. La solicitud contiene un identificador aleatorio que la app crea en tu dispositivo con este fin, la plataforma (iOS o Android), la versión de ejecución (runtime version) de la app y los identificadores de sus actualizaciones actuales y, si la app no pudo iniciarse la última vez, el texto del error. Expo usa el identificador para contar los dispositivos a los que presta servicio, y también ve tu dirección IP. La solicitud no contiene nada sobre tu cuenta ni sobre tus cifras.</p>
+<h3 id="es-rates">Tipos de cambio</h3>
+<p>Para convertir monedas y valorar el oro y la plata, la app descarga los tipos de cambio más recientes de Frankfurter (api.frankfurter.app) y del conjunto de datos gratuito currency-api (a través de cdn.jsdelivr.net o, si falla, de latest.currency-api.pages.dev). Estas solicitudes no contienen nada sobre ti ni sobre tus cifras: a estos servicios solo les llega tu dirección IP, como con cualquier solicitud en internet.</p>
+<h3 id="es-scanner-android">Escaneo de recibos en Android (Google ML Kit)</h3>
+<p>La app usa el escáner de documentos de ML Kit de Google, que se ejecuta en los servicios de Google Play de tu dispositivo. Las imágenes que escanea se quedan en tu dispositivo y solo van a la app. Como todas las funciones de ML Kit, el escáner envía a Google información para diagnóstico y análisis de uso: información del dispositivo (como el fabricante, el modelo, la versión y la compilación del sistema operativo, y el hardware de aprendizaje automático disponible), información de la app (nombre del paquete y versión de la app), un identificador del dispositivo e identificadores creados para cada instalación, métricas de rendimiento (como la latencia), la configuración del escáner (como el formato y la resolución de imagen), los tamaños de entrada y de salida, su versión, el tipo de cada evento (como iniciar el escáner o escanear) y códigos de error. Google afirma que la envía por una conexión cifrada (HTTPS) y que no la comparte con terceros. Google usa esta información según sus propias condiciones y su política de privacidad, no por cuenta nuestra.</p>
+<h3 id="es-scanner-ios">Escaneo de recibos en iPhone</h3>
+<p>La app usa el escáner de documentos que forma parte de iOS (VisionKit). Funciona íntegramente en tu iPhone y no envía nada.</p>
+<h3 id="es-stores">Tiendas de aplicaciones</h3>
+<p>Apple y Google, a través del App Store y de Google Play, nos facilitan estadísticas de descargas y, si lo has permitido en tu dispositivo, informes de fallos que no te identifican. Solo los usamos para solucionar problemas.</p>
+<h3 id="es-sharing">Cuando compartes algo</h3>
+<p>Si exportas tus transacciones como archivo CSV, compartes una foto de un recibo o nos escribes un correo electrónico, los datos van a donde tú los envíes.</p>
+<h2 id="es-abroad">Datos fuera de Turquía</h2>
+<p>Google, Expo y ngrok tienen su sede en Estados Unidos y pueden tratar datos allí y en otros países, y nuestro servidor está en Alemania. Por lo tanto, tus datos se tratan fuera de Turquía, también en países cuyas leyes de protección de datos difieren de las de Turquía o de las de tu propio país.</p>
+<h2 id="es-not">Lo que no hacemos</h2>
+<p>Budgetory no muestra anuncios ni contiene herramientas de análisis, de seguimiento ni de informes de fallos. No vendemos tus datos, no los compartimos con fines publicitarios ni los usamos para crear un perfil sobre ti. La app no accede a tus contactos, tu ubicación ni tu micrófono, y solo usa la cámara y tus fotos cuando decides tomar o elegir una foto.</p>
+<h2 id="es-security">Seguridad</h2>
+<p>Todas las conexiones de la app están cifradas (HTTPS). La conexión con nuestro servidor está cifrada hasta los servidores de ngrok; allí ngrok la descifra y la reenvía a nuestro servidor por su propio túnel cifrado, de modo que los sistemas de ngrok manejan las solicitudes en forma legible. Tu contraseña se queda en Firebase. Solo nosotros podemos iniciar sesión en nuestro servidor, y las copias de seguridad que pasamos a nuestro propio ordenador se guardan en un disco cifrado. Ningún sistema es completamente seguro, pero protegemos tus datos lo mejor que razonablemente podemos.</p>
+<h2 id="es-retention">Cuánto tiempo conservamos los datos</h2>
+<p>Conservamos tu cuenta y tus registros financieros hasta que los elimines o elimines tu cuenta. Todo lo que eliminas se borra de nuestra base de datos de inmediato.</p>
+<p>Las fotos de recibos que tomaste pero no guardaste en una transacción se eliminan una vez que tienen siete días de antigüedad, la próxima vez que la app se conecte a nuestro servidor.</p>
+<p>Cada noche hacemos una copia de seguridad de nuestra base de datos, para que no se pierda nada si el servidor falla. Conservamos las copias de seguridad de los últimos 14 días, y la del primer día de cada mes durante seis meses, en el servidor y en nuestro propio ordenador, y solo las usamos para restaurar el servicio. Todo lo que eliminas, incluida tu cuenta, permanece en las copias de seguridad hasta que estas se eliminan a su vez, como máximo seis meses después.</p>
+<p>Los registros del servidor se conservan solo el tiempo necesario para mantener el servicio en funcionamiento y protegerlo. Google, Expo y ngrok conservan lo que reciben según sus propias normas.</p>
+<h2 id="es-delete">Eliminar tu cuenta</h2>
+<p>En la app, abre «Ajustes», toca «Eliminar cuenta» en la sección «Cuenta» y confirma con tu contraseña. Esto elimina de inmediato tu cuenta y todos sus datos de nuestro servidor (transacciones y fotos de recibos, transacciones recurrentes, presupuestos, metas de ahorro, categorías, tarjetas y compras a plazos, deudas, registros de oro y divisas, cuentas y transferencias, y tu foto de perfil), así como tu cuenta de inicio de sesión en Firebase. Además, cierra tu sesión, con lo que se elimina la copia que hay en tu dispositivo.</p>
+<p>Sin usar la app, escribe a <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> desde la dirección de correo de tu cuenta y pídenos que eliminemos tu cuenta. La eliminaremos y te lo confirmaremos en un plazo de 30 días.</p>
+<p>También puedes eliminar en la app cualquier elemento por separado, en cualquier momento, y quitar tu foto de perfil en «Editar perfil». Tras cualquier eliminación, lo borrado solo se conserva en nuestras copias de seguridad, hasta que estas caduquen, como máximo seis meses después.</p>
+<h2 id="es-rights">Tus derechos</h2>
+<p>Según la Ley turca n.º 6698 de Protección de Datos Personales (KVKK) y, cuando se te aplique, el Reglamento General de Protección de Datos (RGPD) de la UE, puedes:</p>
+<ul><li>saber si tratamos tus datos, y obtener información sobre ellos y una copia</li><li>hacer que se corrijan o se completen</li><li>hacer que se eliminen</li><li>oponerte a cómo los usamos, o pedirnos que limitemos su uso</li><li>recibirlos en un formato transferible (también puedes exportar tus transacciones como archivo CSV en la app)</li><li>saber quién los recibe, en Turquía y en el extranjero, y hacer que se les comuniquen las correcciones y eliminaciones</li><li>oponerte a un resultado en tu contra que se derive únicamente de un análisis automatizado (Budgetory no toma decisiones de ese tipo)</li><li>reclamar una indemnización si un tratamiento ilícito te causa daños</li></ul>
+<p>Para ejercer estos derechos, escribe a <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>, preferiblemente desde la dirección de correo de tu cuenta. Te responderemos en un plazo de 30 días y es posible que te pidamos que confirmes que la cuenta es tuya. También puedes presentar una reclamación ante la autoridad turca de protección de datos (Kişisel Verileri Koruma Kurumu) o ante la autoridad de protección de datos del lugar donde vives.</p>
+<h2 id="es-children">Niños</h2>
+<p>Budgetory no está dirigido a niños menores de 13 años, y no recopilamos sus datos a sabiendas. Si crees que un niño menor de 13 años ha creado una cuenta, envíanos un correo electrónico y la eliminaremos.</p>
+<h2 id="es-changes">Cambios en esta política</h2>
+<p>Cuando cambiamos esta política, actualizamos la fecha que aparece al principio y publicamos la nueva versión en la app y en nuestro sitio web. Si un cambio afecta a cómo se usan tus datos, también te avisaremos en la app o por correo electrónico.</p>
+<h2 id="es-contact">Contacto</h2>
+<p>Para preguntas, solicitudes o quejas sobre tus datos, escribe a Uğurcan&nbsp;Eser a la dirección <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+<article class="lang" id="ru" lang="ru">
+<h1>Политика конфиденциальности</h1>
+<p class="updated">Последнее обновление: 17 октября 2026 г.</p>
+<p>Budgetory — приложение для ведения личного бюджета на iPhone и Android. Эта политика объясняет, какие персональные данные и зачем используют приложение и его сервер, куда эти данные попадают, как долго они хранятся и какие у вас есть права.</p>
+<h2 id="ru-controller">Кто несёт ответственность</h2>
+<p>Budgetory создаёт Uğurcan&nbsp;Eser — частный разработчик из Турции. Он решает, как используются ваши персональные данные, и отвечает за них: он — ответственный за обработку данных, или контролёр (veri sorumlusu по закону Турции о защите персональных данных, KVKK). Слова «мы» и «нас» в этой политике означают его. Связаться с ним можно по адресу <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+<h2 id="ru-collect">Что мы собираем и зачем</h2>
+<h3 id="ru-account">Ваш аккаунт</h3>
+<p>Для создания аккаунта и входа в него мы используем ваше имя, адрес электронной почты и пароль. Firebase Authentication, сервис Google, хранит их и присваивает вашему аккаунту идентификатор пользователя; ваш пароль остаётся в Firebase и никогда не попадает к нам. Наш сервер хранит ваше имя, адрес электронной почты и идентификатор пользователя вместе с вашими данными, чтобы доступ к ним был только у вас. Адрес электронной почты используется также для сброса пароля и для подтверждения нового адреса, когда вы его меняете.</p>
+<h3 id="ru-records">Ваши финансовые записи</h3>
+<p>Приложение хранит то, что вы вводите, чтобы показывать ваши цифры, рассчитывать балансы, бюджеты и прогнозы и чтобы на всех ваших устройствах они были одинаковыми:</p>
+<ul><li>доходы и расходы с их суммами, валютами, категориями, датами и заметками, распределением разделённого платежа по категориям и счётом, к которому относится каждый из них</li><li>бюджеты; регулярные транзакции с расписанием и настройками напоминаний; кредитные карты с днём выписки, днём платежа и настройками напоминаний; а также покупки, которые вы оплачиваете в рассрочку</li><li>цели накоплений и деньги, которые вы на них откладываете или снимаете с них</li><li>категории, которые вы добавляете</li><li>долги с указанными вами именами участников, суммами, датами, сроками возврата, настройками напоминаний, заметками и платежами</li><li>золото, серебро и иностранная валюта, которые вы покупаете или продаёте, с количеством, датами, уплаченной или полученной суммой и заметками</li><li>ваши счета, например наличные, банковские счета и карты, с их названиями, типами, валютами, начальными балансами и указанием основного счёта, а также деньги, которые вы переводите между ними</li></ul>
+<p>Для регулярных транзакций и рассрочек приложение также отправляет часовой пояс вашего устройства: по нему сервер определяет, когда наступает их срок. Budgetory никогда не запрашивает номера карт, номера банковских счетов или банковские пароли и не подключается к вашему банку.</p>
+<h3 id="ru-photos">Фотографии</h3>
+<p>Вы можете добавить фото профиля, а к каждой транзакции — до пяти фото чеков. Перед отправкой приложение уменьшает их и сохраняет заново, без того, что записывает в них камера, например места съёмки; наш сервер делает то же самое ещё раз. Получить фото ваших чеков можете только вы, войдя в свой аккаунт. Фото профиля хранится по длинному случайному адресу, который открывается без входа в аккаунт, чтобы приложение могло показывать его как любое другое изображение: любой, у кого был бы этот адрес, смог бы увидеть фото. Адрес меняется каждый раз, когда вы устанавливаете новое фото.</p>
+<h3 id="ru-logs">Журналы сервера</h3>
+<p>Наш сервер и туннель, по которому к нему идут запросы, записывают каждый запрос: IP-адрес, с которого он пришёл, время, что было запрошено, и результат. Эти записи мы используем только для работы сервиса, устранения неполадок и защиты от злоупотреблений.</p>
+<h2 id="ru-basis">Почему мы вправе использовать ваши данные</h2>
+<p>Данные вашего аккаунта, записи и фото мы используем, чтобы предоставлять вам приложение, в котором вы зарегистрировались (ст. 5(2)(c) KVKK; ст. 6(1)(b) GDPR). Журналы сервера и резервные копии мы храним, а сервис обновлений и сканер чеков используем, потому что у нас есть законный интерес в том, чтобы поддерживать Budgetory в рабочем, защищённом и актуальном состоянии (ст. 5(2)(f) KVKK; ст. 6(1)(f) GDPR).</p>
+<h2 id="ru-device">Что остаётся на вашем устройстве</h2>
+<p>Чтобы ваши данные появлялись сразу при открытии приложения, в том числе без подключения к сети, приложение хранит копию того, что в последний раз загрузило с нашего сервера, а также фото чеков, которые вы добавляете или открываете. И то и другое находится в кэше приложения, который не попадает в резервные копии устройства, и удаляется, когда вы выходите из аккаунта.</p>
+<p>Для виджета на экране «Домой» приложение хранит на вашем устройстве сводку ваших цифр: на каждый день до конца следующего месяца — сколько вы можете потратить в этот день и сколько осталось от месячного бюджета или же расходы за месяц и ожидаемый баланс на его конец. Суммы скрыты, пока включена блокировка приложения или настройка «Скрывать суммы». Сводка никогда не отправляется нам и стирается, когда вы выходите из аккаунта.</p>
+<p>Firebase сохраняет ваш вход в аккаунт на устройстве, а приложение хранит там ваши настройки. Напоминания — это уведомления, которые приложение планирует на вашем устройстве; Budgetory не использует сервис push-уведомлений.</p>
+<p>Если вы включите блокировку приложения, устройство будет проверять ваше лицо, отпечаток пальца, код-пароль или блокировку экрана. Приложение узнаёт только, успешно ли прошла проверка; ничего о вашем лице, отпечатке пальца или код-пароле не попадает ни в приложение, ни к нам.</p>
+<p>На Android Budgetory разрешает системе создавать резервную копию приложения в вашем аккаунте Google. Такая копия может включать ваши настройки, сохранённый вход в аккаунт и сводку виджета, но не копию ваших данных и не ваши фото. На iPhone резервные копии в iCloud и на компьютере могут включать сводку виджета. Эти резервные копии хранят для вас Google или Apple; у нас нет к ним доступа.</p>
+<h2 id="ru-recipients">Кто ещё получает данные</h2>
+<p>Для работы Budgetory мы пользуемся следующими сервисами. Firebase, Hetzner, ngrok и Expo — наши поставщики услуг: они обрабатывают данные по нашему поручению и только для того, чтобы оказывать нам свои услуги.</p>
+<h3 id="ru-firebase">Firebase Authentication (Google)</h3>
+<p>Хранит ваше имя, адрес электронной почты, пароль и идентификатор пользователя, выполняет вход в ваш аккаунт и отправляет письма для сброса пароля или подтверждения нового адреса электронной почты. Видит ваш IP-адрес, когда приложение к нему обращается.</p>
+<h3 id="ru-server">Наш сервер</h3>
+<p>База данных Budgetory работает на виртуальном выделенном сервере в Германии, который мы арендуем у Hetzner Online GmbH. Приложение подключается к нему через туннель, которым управляет ngrok, Inc. Оба они обрабатывают ваши данные только для того, чтобы сервер мог работать.</p>
+<h3 id="ru-expo">Обновления приложения (Expo)</h3>
+<p>При каждом запуске приложение спрашивает у сервиса обновлений Expo (EAS Update), есть ли более новая версия его кода, чтобы исправления доходили до вас в промежутках между выпусками в магазинах приложений. В запросе передаются случайный идентификатор, который приложение специально для этого создаёт на вашем устройстве, платформа (iOS или Android), версия среды выполнения приложения (runtime version) и идентификаторы его текущих обновлений, а если в прошлый раз приложение не смогло запуститься, — текст ошибки. Expo использует этот идентификатор, чтобы подсчитывать обслуживаемые устройства, и, кроме того, видит ваш IP-адрес. В запросе нет никаких сведений ни о вашем аккаунте, ни о ваших цифрах.</p>
+<h3 id="ru-rates">Курсы валют</h3>
+<p>Чтобы пересчитывать валюты и оценивать золото и серебро, приложение загружает последние курсы из Frankfurter (api.frankfurter.app) и из бесплатного набора данных currency-api (через cdn.jsdelivr.net, а если это не удаётся — через latest.currency-api.pages.dev). В этих запросах нет ничего ни о вас, ни о ваших цифрах: к этим сервисам попадает только ваш IP-адрес, как при любом запросе в интернете.</p>
+<h3 id="ru-scanner-android">Сканирование чеков на Android (Google ML Kit)</h3>
+<p>Приложение использует сканер документов ML Kit от Google, который работает в сервисах Google Play на вашем устройстве. Отсканированные им изображения остаются на устройстве и передаются только приложению. Как и все функции ML Kit, он отправляет в Google сведения для диагностики и анализа использования: информацию об устройстве (например, производитель, модель, версия и сборка операционной системы и доступное оборудование для машинного обучения), информацию о приложении (имя пакета и версия приложения), идентификатор устройства и идентификаторы, создаваемые для каждой установки, показатели производительности (например, задержка), настройки сканера (например, формат и разрешение изображения), размеры входных и выходных данных, свою версию, тип каждого события (например, запуск сканера или сканирование) и коды ошибок. По словам Google, эти сведения отправляются по зашифрованному соединению (HTTPS) и не передаются третьим лицам. Google использует эти сведения в соответствии со своими условиями и политикой конфиденциальности, а не по нашему поручению.</p>
+<h3 id="ru-scanner-ios">Сканирование чеков на iPhone</h3>
+<p>Приложение использует встроенный в iOS сканер документов (VisionKit). Он работает полностью на вашем iPhone и ничего не отправляет.</p>
+<h3 id="ru-stores">Магазины приложений</h3>
+<p>Apple и Google через App Store и Google Play предоставляют нам статистику загрузок и, если вы разрешили это на своём устройстве, отчёты о сбоях, по которым вас нельзя идентифицировать. Мы используем их только для устранения неполадок.</p>
+<h3 id="ru-sharing">Когда вы чем-то делитесь</h3>
+<p>Если вы экспортируете свои транзакции в файл CSV, делитесь фото чека или пишете нам по электронной почте, данные попадают туда, куда вы их отправляете.</p>
+<h2 id="ru-abroad">Данные за пределами Турции</h2>
+<p>Google, Expo и ngrok находятся в США и могут обрабатывать данные там и в других странах, а наш сервер находится в Германии. Поэтому ваши данные обрабатываются за пределами Турции, в том числе в странах, где законы о защите данных отличаются от законов Турции или вашей страны.</p>
+<h2 id="ru-not">Чего мы не делаем</h2>
+<p>Budgetory не показывает рекламу и не содержит инструментов аналитики, отслеживания или отправки отчётов о сбоях. Мы не продаём ваши данные, не передаём их для рекламы и не используем их, чтобы составить ваш профиль. Приложение не обращается к вашим контактам, местоположению или микрофону, а камеру и ваши фото использует, только когда вы сами решаете сделать или выбрать фото.</p>
+<h2 id="ru-security">Безопасность</h2>
+<p>Все соединения приложения зашифрованы (HTTPS). Соединение с нашим сервером зашифровано до серверов ngrok; там ngrok расшифровывает его и передаёт дальше на наш сервер по собственному зашифрованному туннелю, поэтому системы ngrok обрабатывают запросы в читаемом виде. Ваш пароль остаётся в Firebase. Входить на наш сервер можем только мы, а резервные копии, которые мы сохраняем на свой компьютер, хранятся на зашифрованном диске. Полностью защищённых систем не бывает, но мы защищаем ваши данные настолько хорошо, насколько это разумно возможно.</p>
+<h2 id="ru-retention">Как долго мы храним данные</h2>
+<p>Мы храним ваш аккаунт и записи, пока вы не удалите их или сам аккаунт. Всё, что вы удаляете, сразу же стирается из нашей базы данных.</p>
+<p>Фото чеков, которые вы сделали, но не сохранили вместе с транзакцией, удаляются по прошествии семи дней — при следующем подключении приложения к нашему серверу.</p>
+<p>Каждую ночь мы делаем резервную копию нашей базы данных, чтобы ничего не потерялось, если сервер выйдет из строя. Мы храним на сервере и на своём компьютере резервные копии за последние 14 дней, а копию за первое число каждого месяца — в течение шести месяцев, и используем их только для восстановления сервиса. Всё, что вы удаляете, включая аккаунт, остаётся в резервных копиях, пока, в свою очередь, не будут удалены и сами копии, — не позднее чем через шесть месяцев.</p>
+<p>Журналы сервера хранятся только столько, сколько нужно для работы и защиты сервиса. Google, Expo и ngrok хранят полученные данные по своим правилам.</p>
+<h2 id="ru-delete">Удаление аккаунта</h2>
+<p>В приложении откройте «Настройки», в разделе «Аккаунт» нажмите «Удалить аккаунт» и подтвердите паролем. При этом с нашего сервера сразу удаляются ваш аккаунт и все его данные (транзакции и фото чеков, регулярные транзакции, бюджеты, цели накоплений, категории, карты и покупки в рассрочку, долги, записи о золоте и валюте, счета и переводы, а также фото профиля), а из Firebase — ваша учётная запись для входа. Кроме того, вы выходите из аккаунта, и копия данных на вашем устройстве удаляется.</p>
+<p>Чтобы удалить аккаунт без приложения, напишите на <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> с адреса, к которому он привязан, и попросите нас его удалить. Мы удалим его и подтвердим это в течение 30 дней.</p>
+<p>Кроме того, вы в любое время можете удалить в приложении любую отдельную запись, а фото профиля — убрать на экране «Изменить профиль». После любого удаления данные остаются только в наших резервных копиях, пока не истечёт срок их хранения, — не позднее чем через шесть месяцев.</p>
+<h2 id="ru-rights">Ваши права</h2>
+<p>Согласно закону Турции № 6698 о защите персональных данных (KVKK) и Общему регламенту ЕС по защите данных (GDPR), если он к вам применим, вы можете:</p>
+<ul><li>узнать, обрабатываем ли мы ваши данные, и получить сведения о них и их копию</li><li>потребовать исправить или дополнить их</li><li>потребовать удалить их</li><li>возразить против того, как мы их используем, или попросить нас ограничить их использование</li><li>получить их в переносимом формате (вы также можете экспортировать свои транзакции в файл CSV в приложении)</li><li>узнать, кто получает их в Турции и за рубежом, и потребовать сообщить получателям об исправлениях и удалениях</li><li>возразить против неблагоприятного для вас результата, основанного исключительно на автоматизированном анализе (Budgetory таких решений не принимает)</li><li>требовать возмещения, если незаконная обработка данных причинила вам ущерб</li></ul>
+<p>Чтобы воспользоваться этими правами, напишите на <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> — желательно с адреса, к которому привязан ваш аккаунт. Мы ответим в течение 30 дней и можем попросить вас подтвердить, что аккаунт принадлежит вам. Вы также можете подать жалобу в турецкий орган по защите персональных данных (Kişisel Verileri Koruma Kurumu) или в орган по защите данных по месту вашего проживания.</p>
+<h2 id="ru-children">Дети</h2>
+<p>Приложение Budgetory не предназначено для детей младше 13 лет, и мы сознательно не собираем их данные. Если вы считаете, что аккаунт создал ребёнок младше 13 лет, напишите нам, и мы его удалим.</p>
+<h2 id="ru-changes">Изменения этой политики</h2>
+<p>Изменяя эту политику, мы обновляем дату в её начале и публикуем новую версию в приложении и на нашем сайте. Если изменение затрагивает то, как используются ваши данные, мы также сообщим вам об этом в приложении или по электронной почте.</p>
+<h2 id="ru-contact">Контакты</h2>
+<p>С вопросами, запросами или жалобами по поводу ваших данных пишите Uğurcan&nbsp;Eser на <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
+</article>
+</main>
+<script>
+(function () {
+  var langs = ["en", "tr", "de", "fr", "es", "ru"];
+  var labels = {"en": {"policy": "Privacy Policy", "deletion": "Delete Account", "language": "Language"}, "tr": {"policy": "Gizlilik Politikası", "deletion": "Hesabı Sil", "language": "Dil"}, "de": {"policy": "Datenschutzerklärung", "deletion": "Konto löschen", "language": "Sprache"}, "fr": {"policy": "Politique de confidentialité", "deletion": "Supprimer le compte", "language": "Langue"}, "es": {"policy": "Política de privacidad", "deletion": "Eliminar cuenta", "language": "Idioma"}, "ru": {"policy": "Политика конфиденциальности", "deletion": "Удалить аккаунт", "language": "Язык"}};
+  var root = document.documentElement;
+  function update(scroll) {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var m = /^(tr|de|fr|es|ru)(-|$)/.exec(id);
+    var lang = m ? m[1] : 'en';
+    var text = labels[lang];
+    root.setAttribute('data-lang', lang);
+    root.lang = lang;
+    langs.forEach(function (code) {
+      var link = document.getElementById('to-' + code);
+      if (code === lang) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    });
+    // The links to the two pages keep the language.
+    ['policy', 'deletion'].forEach(function (page) {
+      var link = document.getElementById('page-' + page);
+      link.textContent = text[page];
+      link.setAttribute('href', link.getAttribute('data-file') + (lang === 'en' ? '' : '#' + lang));
+    });
+    document.getElementById('pages').setAttribute('aria-label', 'Budgetory');
+    document.getElementById('languages').setAttribute('aria-label', text.language);
+    document.title = 'Budgetory \u2013 ' + text["policy"];
+    if (!scroll) return;
+    var target = id && document.getElementById(id);
+    if (target && langs.indexOf(id) < 0) target.scrollIntoView();
+    else window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', function () { update(true); });
+  update(false);
+})();
+</script>
+</body>
+</html>

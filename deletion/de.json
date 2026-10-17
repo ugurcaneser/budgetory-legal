@@ -1,0 +1,23 @@
+{
+  "deleteTitle": "Ihr Budgetory-Konto löschen",
+  "deleteByline": "Budgetory, die App von Uğurcan Eser zur persönlichen Budgetplanung",
+  "deleteIntro": "Sie können Ihr Budgetory-Konto und alle zugehörigen Daten jederzeit löschen, in der App oder per E-Mail.",
+  "deleteInAppTitle": "In der App",
+  "deleteStep1": "Öffnen Sie Budgetory und melden Sie sich an.",
+  "deleteStep2": "Tippen Sie auf „Einstellungen“.",
+  "deleteStep3": "Tippen Sie unter „Konto“ auf „Konto löschen“.",
+  "deleteStep4": "Geben Sie Ihr Passwort ein und tippen Sie auf „Konto löschen“.",
+  "deleteInAppDone": "Ihr Konto und die zugehörigen Daten werden sofort gelöscht, und Sie werden abgemeldet.",
+  "deleteEmailTitle": "Per E-Mail, ohne die App",
+  "deleteEmail": "Schreiben Sie von der Adresse Ihres Kontos eine E-Mail an ugurcaneser@icloud.com und bitten Sie uns, Ihr Budgetory-Konto zu löschen. Wir löschen es und bestätigen dies innerhalb von 30 Tagen per E-Mail. Wenn Sie von einer anderen Adresse schreiben, können wir Sie bitten zu bestätigen, dass das Konto Ihnen gehört.",
+  "deleteDeletedTitle": "Was gelöscht wird",
+  "deleteDeletedFirebase": "Ihr Anmeldekonto bei Firebase Authentication: Ihr Name, Ihre E-Mail-Adresse und Ihr Passwort.",
+  "deleteDeletedServer": "Alles, was mit Ihrem Konto auf unserem Server gespeichert ist: Transaktionen und ihre Belegfotos, wiederkehrende Transaktionen, Budgets, Sparziele, Kategorien, Kreditkarten und Ratenkäufe, Schulden und ihre Zahlungen, Gold- und Währungseinträge, Konten und Umbuchungen sowie Ihr Profilfoto.",
+  "deleteDeletedDevice": "Die Kopie Ihrer Daten auf Ihren Geräten, sobald das jeweilige Gerät abgemeldet wird.",
+  "deleteKeptTitle": "Was aufbewahrt wird und wie lange",
+  "deleteKeptBackups": "Ihre Daten bleiben in unseren nächtlichen Backups der Datenbank, bis diese ihrerseits gelöscht werden: tägliche Backups nach 14 Tagen, monatliche nach sechs Monaten. Nach spätestens sechs Monaten ist also nichts mehr von Ihrem Konto übrig. Backups werden nur verwendet, um den Dienst nach einem Ausfall wiederherzustellen.",
+  "deleteKeptLogs": "Protokolle der Anfragen an unseren Server und seinen Tunnel (IP-Adressen, Zeitpunkte und was angefordert wurde) werden nur so lange aufbewahrt, wie es nötig ist, um den Dienst zu betreiben und abzusichern.",
+  "deleteKeptProviders": "Expo und Google bewahren die Update- und Scanner-Diagnosedaten, die sie erhalten haben und die nicht mit Ihrem Konto verknüpft sind, nach ihren eigenen Regeln auf.",
+  "deletePartialTitle": "Einen Teil Ihrer Daten löschen",
+  "deletePartial": "Sie müssen nicht Ihr Konto löschen, um Daten zu löschen: Sie können in der App beliebige Transaktionen, Belegfotos, Budgets, Sparziele, Schulden, Einträge oder Konten löschen und Ihr Profilfoto unter „Profil bearbeiten“ entfernen. Wenn wir etwas anderes löschen sollen, schreiben Sie eine E-Mail an ugurcaneser@icloud.com."
+}

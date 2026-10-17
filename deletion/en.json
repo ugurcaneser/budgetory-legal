@@ -1,0 +1,23 @@
+{
+  "deleteTitle": "Delete your Budgetory account",
+  "deleteByline": "Budgetory, the personal budgeting app by Uğurcan Eser",
+  "deleteIntro": "You can delete your Budgetory account and all of its data at any time, in the app or by email.",
+  "deleteInAppTitle": "In the app",
+  "deleteStep1": "Open Budgetory and sign in.",
+  "deleteStep2": "Tap Settings.",
+  "deleteStep3": "Under Account, tap Delete Account.",
+  "deleteStep4": "Enter your password and tap Delete Account.",
+  "deleteInAppDone": "Your account and its data are deleted at once, and you're signed out.",
+  "deleteEmailTitle": "By email, without the app",
+  "deleteEmail": "Email ugurcaneser@icloud.com from the address of your account and ask us to delete your Budgetory account. We'll delete it and confirm by email within 30 days. If you write from another address, we may ask you to confirm that the account is yours.",
+  "deleteDeletedTitle": "What is deleted",
+  "deleteDeletedFirebase": "Your sign-in account in Firebase Authentication: your name, email address and password.",
+  "deleteDeletedServer": "Everything stored with your account on our server: transactions and their receipt photos, recurring transactions, budgets, savings goals, categories, credit cards and installment purchases, debts and their payments, gold and currency entries, accounts and transfers, and your profile photo.",
+  "deleteDeletedDevice": "The copy of your data on your devices, as each one signs out.",
+  "deleteKeptTitle": "What is kept, and for how long",
+  "deleteKeptBackups": "Our nightly backups of the database keep your data until they are deleted in turn: daily backups after 14 days, monthly ones after six months. So after six months at most, nothing of your account remains. Backups are used only to restore the service after a failure.",
+  "deleteKeptLogs": "Logs of requests to our server and its tunnel (IP addresses, times and what was asked for) are kept only as long as needed to run and secure the service.",
+  "deleteKeptProviders": "Expo and Google keep the update and scanner diagnostics they received, which aren't linked to your account, under their own rules.",
+  "deletePartialTitle": "Deleting some of your data",
+  "deletePartial": "You don't have to delete your account to delete data: you can delete any transaction, receipt photo, budget, savings goal, debt, entry or account in the app, and remove your profile photo in Edit Profile. To ask us to delete anything else, email ugurcaneser@icloud.com."
+}
