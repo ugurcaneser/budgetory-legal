@@ -1,6 +1,6 @@
 # Budgetory legal pages
 
-The privacy policy and the account deletion page of Budgetory, the personal budgeting app by Uğurcan Eser, served by GitHub Pages from `docs/`:
+The privacy policy and the account deletion page of Budgetory, the personal budgeting app by Ugurcan Eser, served by GitHub Pages from `docs/`:
 
 - Privacy policy: https://ugurcaneser.github.io/budgetory-legal/
 - Deleting an account: https://ugurcaneser.github.io/budgetory-legal/delete-account.html

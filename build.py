@@ -76,7 +76,7 @@ def slug(key):
 def inline(text):
     out = html.escape(text, quote=False)
     # The developer's name stays on one line.
-    out = out.replace('Uğurcan Eser', 'Uğurcan&nbsp;Eser')
+    out = out.replace('Ugurcan Eser', 'Ugurcan&nbsp;Eser')
     return out.replace(EMAIL, f'<a href="mailto:{EMAIL}">{EMAIL}</a>')
 
 
