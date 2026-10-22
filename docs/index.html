@@ -113,7 +113,7 @@ ol li { padding-left: 0.2em; }
 <main class="wrap">
 <article class="lang" id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 17 October 2026</p>
+<p class="updated">Last updated: 22 October 2026</p>
 <p>Budgetory is a personal budgeting app for iPhone and Android. This policy explains which personal data the app and its server use and why, where the data goes, how long it is kept and what your rights are.</p>
 <h2 id="controller">Who is responsible</h2>
 <p>Budgetory is made by Ugurcan&nbsp;Eser, an individual developer in Türkiye. He decides how your personal data is used and is responsible for it: he is the data controller (veri sorumlusu under Türkiye's Personal Data Protection Law, KVKK). In this policy, “we” and “us” mean him. You can reach him at <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
@@ -137,11 +137,11 @@ ol li { padding-left: 0.2em; }
 <p>If you turn on the app lock, your device checks your face, fingerprint, passcode or screen lock. The app only learns whether the check succeeded; nothing about your face, fingerprint or passcode reaches the app or us.</p>
 <p>On Android, Budgetory lets the system back up the app to your Google account. Such a backup can include your settings, your sign-in and the widget's summary, but not the copy of your data or your photos. On iPhone, iCloud and computer backups can include the widget's summary. These backups are kept by Google or Apple for you; we can't access them.</p>
 <h2 id="recipients">Who else receives data</h2>
-<p>We use the following services to run Budgetory. Firebase, Hetzner, ngrok and Expo are our service providers: they process data on our behalf, only to provide their service to us.</p>
+<p>We use the following services to run Budgetory. Firebase, Hetzner, Expo and, for older versions of the app, ngrok are our service providers: they process data on our behalf, only to provide their service to us.</p>
 <h3 id="firebase">Firebase Authentication (Google)</h3>
 <p>Keeps your name, email address, password and user ID, signs you in, and sends the emails that reset your password or confirm a new email address. It sees your IP address when the app contacts it.</p>
 <h3 id="server">Our server</h3>
-<p>Budgetory's database runs on a virtual private server in Germany that we rent from Hetzner Online GmbH. The app reaches it through a tunnel run by ngrok, Inc. Both handle your data only so that the server can work.</p>
+<p>Budgetory's database runs on a virtual private server in Germany that we rent from Hetzner Online GmbH, and the app connects to it directly. Versions of the app before 1.6.0 still reach it through a tunnel run by ngrok, Inc. Both handle your data only so that the server can work.</p>
 <h3 id="expo">App updates (Expo)</h3>
 <p>Each time it starts, the app asks Expo's update service (EAS Update) whether a newer version of its code is available, so that fixes can reach you between app store releases. The request contains a random identifier that the app creates on your device for this, the platform (iOS or Android), the app's runtime version and the identifiers of its current updates, and, if the app failed to start the last time, the error text. Expo uses the identifier to count the devices it serves, and it also sees your IP address. The request contains nothing about your account or your figures.</p>
 <h3 id="rates">Exchange rates</h3>
@@ -159,7 +159,7 @@ ol li { padding-left: 0.2em; }
 <h2 id="not">What we don't do</h2>
 <p>Budgetory shows no ads and contains no analytics, tracking or crash-reporting tools. We don't sell your data, share it for advertising or use it to build a profile of you. The app doesn't access your contacts, location or microphone, and it uses the camera and your photos only when you choose to take or pick a photo.</p>
 <h2 id="security">Security</h2>
-<p>All of the app's connections are encrypted (HTTPS). The connection to our server is encrypted as far as ngrok's servers; ngrok decrypts it there and passes it on to our server through its own encrypted tunnel, so ngrok's systems handle the requests in readable form. Your password stays with Firebase. Only we can sign in to our server, and the backups we copy to our own computer are kept on an encrypted disk. No system is completely secure, but we protect your data as well as we reasonably can.</p>
+<p>All of the app's connections are encrypted (HTTPS), and the connection to our server is encrypted all the way to it. Versions of the app before 1.6.0 still go through ngrok, which decrypts their connection on its servers and passes it on to our server through its own encrypted tunnel, so ngrok's systems handle those requests in readable form. Your password stays with Firebase. Only we can sign in to our server, and the backups we copy to our own computer are kept on an encrypted disk. No system is completely secure, but we protect your data as well as we reasonably can.</p>
 <h2 id="retention">How long we keep data</h2>
 <p>We keep your account and records until you delete them or your account. Anything you delete is removed from our database at once.</p>
 <p>Receipt photos that you took but didn't save with a transaction are deleted once they are seven days old, the next time the app connects to our server.</p>
@@ -182,7 +182,7 @@ ol li { padding-left: 0.2em; }
 </article>
 <article class="lang" id="tr" lang="tr">
 <h1>Gizlilik Politikası</h1>
-<p class="updated">Son güncelleme: 17 Ekim 2026</p>
+<p class="updated">Son güncelleme: 22 Ekim 2026</p>
 <p>Budgetory, iPhone ve Android için kişisel bir bütçe uygulamasıdır. Bu politika, uygulamanın ve sunucusunun hangi kişisel verileri neden kullandığını, verilerin nereye gittiğini, ne kadar süre saklandığını ve haklarınızın neler olduğunu açıklar.</p>
 <h2 id="tr-controller">Sorumlu kişi</h2>
 <p>Budgetory'nin geliştiricisi, Türkiye'de bireysel olarak çalışan Ugurcan&nbsp;Eser'dir. Kişisel verilerinizin nasıl kullanılacağına o karar verir ve bunlardan o sorumludur; yani Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusudur. Bu politikada “biz” ve “bize” sözcükleri onu ifade eder. Kendisine <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a> adresinden ulaşabilirsiniz.</p>
@@ -206,11 +206,11 @@ ol li { padding-left: 0.2em; }
 <p>Uygulama kilidini etkinleştirirseniz yüzünüzü, parmak izinizi, parolanızı ya da ekran kilidinizi cihazınız kontrol eder. Uygulama yalnızca kontrolün başarılı olup olmadığını öğrenir; yüzünüz, parmak iziniz ya da parolanızla ilgili hiçbir şey uygulamaya ya da bize ulaşmaz.</p>
 <p>Android'de Budgetory, sistemin uygulamayı Google hesabınıza yedeklemesine izin verir. Böyle bir yedek ayarlarınızı, oturumunuzu ve widget'ın özetini içerebilir, ancak verilerinizin kopyasını ya da fotoğraflarınızı içermez. iPhone'da iCloud ve bilgisayar yedekleri widget'ın özetini içerebilir. Bu yedekleri sizin için Google ya da Apple saklar; bunlara erişemeyiz.</p>
 <h2 id="tr-recipients">Verileri başka kimler alır</h2>
-<p>Budgetory'yi çalıştırmak için aşağıdaki hizmetleri kullanırız. Firebase, Hetzner, ngrok ve Expo hizmet sağlayıcılarımızdır: verileri bizim adımıza ve yalnızca bize hizmetlerini sunmak için işlerler.</p>
+<p>Budgetory'yi çalıştırmak için aşağıdaki hizmetleri kullanırız. Firebase, Hetzner, Expo ve uygulamanın eski sürümleri için ngrok hizmet sağlayıcılarımızdır: verileri bizim adımıza ve yalnızca bize hizmetlerini sunmak için işlerler.</p>
 <h3 id="tr-firebase">Firebase Authentication (Google)</h3>
 <p>Adınızı, e-posta adresinizi, şifrenizi ve kullanıcı kimliğinizi saklar, giriş yapmanızı sağlar ve şifrenizi sıfırlamaya ya da yeni bir e-posta adresini doğrulamaya yarayan e-postaları gönderir. Uygulama kendisine bağlandığında IP adresinizi görür.</p>
 <h3 id="tr-server">Sunucumuz</h3>
-<p>Budgetory'nin veritabanı, Hetzner Online GmbH'den kiraladığımız ve Almanya'da bulunan bir sanal özel sunucuda çalışır. Uygulama bu sunucuya ngrok, Inc. tarafından işletilen bir tünel üzerinden ulaşır. Her ikisi de verilerinizi yalnızca sunucunun çalışabilmesi için işler.</p>
+<p>Budgetory'nin veritabanı, Hetzner Online GmbH'den kiraladığımız ve Almanya'da bulunan bir sanal özel sunucuda çalışır; uygulama bu sunucuya doğrudan bağlanır. Uygulamanın 1.6.0'dan önceki sürümleri sunucuya hâlâ ngrok, Inc. tarafından işletilen bir tünel üzerinden ulaşır. Her ikisi de verilerinizi yalnızca sunucunun çalışabilmesi için işler.</p>
 <h3 id="tr-expo">Uygulama güncellemeleri (Expo)</h3>
 <p>Düzeltmelerin uygulama mağazası sürümleri arasında size ulaşabilmesi için uygulama, her açılışında Expo'nun güncelleme hizmetine (EAS Update) kodunun daha yeni bir sürümü olup olmadığını sorar. İstek, uygulamanın bu amaçla cihazınızda oluşturduğu rastgele bir tanımlayıcıyı, platformu (iOS ya da Android), uygulamanın çalışma zamanı sürümünü (runtime version) ve mevcut güncellemelerinin tanımlayıcılarını, ayrıca uygulama son seferinde açılamadıysa hata metnini içerir. Expo bu tanımlayıcıyı hizmet verdiği cihazları saymak için kullanır; IP adresinizi de görür. İstek, hesabınız ya da rakamlarınızla ilgili hiçbir şey içermez.</p>
 <h3 id="tr-rates">Döviz kurları</h3>
@@ -228,7 +228,7 @@ ol li { padding-left: 0.2em; }
 <h2 id="tr-not">Yapmadıklarımız</h2>
 <p>Budgetory reklam göstermez; analiz, izleme ya da çökme raporlama araçları içermez. Verilerinizi satmayız, reklam amacıyla paylaşmayız ya da hakkınızda profil oluşturmak için kullanmayız. Uygulama kişilerinize, konumunuza ya da mikrofonunuza erişmez; kamerayı ve fotoğraflarınızı yalnızca siz bir fotoğraf çekmek ya da seçmek istediğinizde kullanır.</p>
 <h2 id="tr-security">Güvenlik</h2>
-<p>Uygulamanın tüm bağlantıları şifrelidir (HTTPS). Sunucumuza giden bağlantı ngrok'un sunucularına kadar şifrelidir; ngrok bağlantının şifresini orada çözer ve istekleri kendi şifreli tüneli üzerinden sunucumuza iletir, bu nedenle ngrok'un sistemleri istekleri okunabilir hâlde işler. Şifreniz Firebase'te kalır. Sunucumuza yalnızca biz giriş yapabiliriz; kendi bilgisayarımıza kopyaladığımız yedekler de şifreli bir diskte saklanır. Hiçbir sistem tamamen güvenli değildir, ancak verilerinizi makul ölçüde elimizden geldiğince iyi koruruz.</p>
+<p>Uygulamanın tüm bağlantıları şifrelidir (HTTPS) ve sunucumuza giden bağlantı sunucuya kadar baştan sona şifrelidir. Uygulamanın 1.6.0'dan önceki sürümleri hâlâ ngrok üzerinden geçer; ngrok bu sürümlerin bağlantısının şifresini kendi sunucularında çözer ve istekleri kendi şifreli tüneli üzerinden sunucumuza iletir, bu nedenle ngrok'un sistemleri bu istekleri okunabilir hâlde işler. Şifreniz Firebase'te kalır. Sunucumuza yalnızca biz giriş yapabiliriz; kendi bilgisayarımıza kopyaladığımız yedekler de şifreli bir diskte saklanır. Hiçbir sistem tamamen güvenli değildir, ancak verilerinizi makul ölçüde elimizden geldiğince iyi koruruz.</p>
 <h2 id="tr-retention">Verileri ne kadar süre saklıyoruz</h2>
 <p>Hesabınızı ve kayıtlarınızı, siz kayıtlarınızı ya da hesabınızı silene kadar saklarız. Sildiğiniz her şey veritabanımızdan hemen kaldırılır.</p>
 <p>Çektiğiniz ancak bir işlemle birlikte kaydetmediğiniz fiş fotoğrafları, yedi günü doldurduktan sonra, uygulama sunucumuza bir sonraki bağlandığında silinir.</p>
@@ -251,7 +251,7 @@ ol li { padding-left: 0.2em; }
 </article>
 <article class="lang" id="de" lang="de">
 <h1>Datenschutzerklärung</h1>
-<p class="updated">Zuletzt aktualisiert: 17. Oktober 2026</p>
+<p class="updated">Zuletzt aktualisiert: 22. Oktober 2026</p>
 <p>Budgetory ist eine App zur persönlichen Budgetplanung für iPhone und Android. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten die App und ihr Server verwenden und warum, wohin die Daten gelangen, wie lange sie gespeichert werden und welche Rechte Sie haben.</p>
 <h2 id="de-controller">Wer verantwortlich ist</h2>
 <p>Budgetory wird von Ugurcan&nbsp;Eser entwickelt, einem Einzelentwickler in der Türkei. Er entscheidet, wie Ihre personenbezogenen Daten verwendet werden, und trägt die Verantwortung dafür: Er ist der Verantwortliche (veri sorumlusu nach dem türkischen Gesetz über den Schutz personenbezogener Daten, KVKK). In dieser Datenschutzerklärung stehen „wir“ und „uns“ für ihn. Sie erreichen ihn unter <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
@@ -275,11 +275,11 @@ ol li { padding-left: 0.2em; }
 <p>Wenn Sie die App-Sperre einschalten, prüft Ihr Gerät Ihr Gesicht, Ihren Fingerabdruck, Ihren Code oder Ihre Displaysperre. Die App erfährt nur, ob die Prüfung erfolgreich war; nichts über Ihr Gesicht, Ihren Fingerabdruck oder Ihren Code gelangt zur App oder zu uns.</p>
 <p>Unter Android erlaubt Budgetory dem System, die App in Ihrem Google-Konto zu sichern. Ein solches Backup kann Ihre Einstellungen, Ihre Anmeldung und die Zusammenfassung des Widgets enthalten, aber nicht die Kopie Ihrer Daten oder Ihre Fotos. Auf dem iPhone können iCloud- und Computer-Backups die Zusammenfassung des Widgets enthalten. Diese Backups bewahren Google oder Apple für Sie auf; wir haben keinen Zugriff darauf.</p>
 <h2 id="de-recipients">Wer außerdem Daten erhält</h2>
-<p>Für den Betrieb von Budgetory nutzen wir die folgenden Dienste. Firebase, Hetzner, ngrok und Expo sind unsere Dienstleister, das heißt, sie verarbeiten Daten in unserem Auftrag und nur, um ihren Dienst für uns zu erbringen.</p>
+<p>Für den Betrieb von Budgetory nutzen wir die folgenden Dienste. Firebase, Hetzner, Expo und, für ältere Versionen der App, ngrok sind unsere Dienstleister, das heißt, sie verarbeiten Daten in unserem Auftrag und nur, um ihren Dienst für uns zu erbringen.</p>
 <h3 id="de-firebase">Firebase Authentication (Google)</h3>
 <p>Speichert Ihren Namen, Ihre E-Mail-Adresse, Ihr Passwort und Ihre Nutzer-ID, meldet Sie an und versendet die E-Mails zum Zurücksetzen Ihres Passworts oder zum Bestätigen einer neuen E-Mail-Adresse. Der Dienst sieht Ihre IP-Adresse, wenn die App ihn kontaktiert.</p>
 <h3 id="de-server">Unser Server</h3>
-<p>Die Datenbank von Budgetory läuft auf einem virtuellen privaten Server in Deutschland, den wir bei der Hetzner Online GmbH mieten. Die App erreicht ihn über einen Tunnel, den ngrok, Inc. betreibt. Beide verarbeiten Ihre Daten nur, damit der Server funktionieren kann.</p>
+<p>Die Datenbank von Budgetory läuft auf einem virtuellen privaten Server in Deutschland, den wir bei der Hetzner Online GmbH mieten, und die App verbindet sich direkt mit ihm. Versionen der App vor 1.6.0 erreichen ihn weiterhin über einen Tunnel, den ngrok, Inc. betreibt. Beide verarbeiten Ihre Daten nur, damit der Server funktionieren kann.</p>
 <h3 id="de-expo">App-Updates (Expo)</h3>
 <p>Bei jedem Start fragt die App den Update-Dienst von Expo (EAS Update), ob eine neuere Version ihres Codes verfügbar ist, damit Fehlerbehebungen Sie zwischen den Veröffentlichungen in den App-Stores erreichen können. Die Anfrage enthält eine zufällige Kennung, die die App dafür auf Ihrem Gerät erzeugt, die Plattform (iOS oder Android), die Laufzeitversion (runtime version) der App und die Kennungen ihrer aktuellen Updates sowie, falls die App beim letzten Mal nicht starten konnte, den Fehlertext. Expo verwendet die Kennung, um die Geräte zu zählen, die es bedient, und sieht außerdem Ihre IP-Adresse. Die Anfrage enthält nichts über Ihr Konto oder Ihre Zahlen.</p>
 <h3 id="de-rates">Wechselkurse</h3>
@@ -297,7 +297,7 @@ ol li { padding-left: 0.2em; }
 <h2 id="de-not">Was wir nicht tun</h2>
 <p>Budgetory zeigt keine Werbung und enthält keine Tools für Analyse, Tracking oder Absturzberichte. Wir verkaufen Ihre Daten nicht, geben sie nicht zu Werbezwecken weiter und nutzen sie nicht, um ein Profil von Ihnen zu erstellen. Die App greift nicht auf Ihre Kontakte, Ihren Standort oder Ihr Mikrofon zu und nutzt die Kamera und Ihre Fotos nur, wenn Sie ein Foto aufnehmen oder auswählen möchten.</p>
 <h2 id="de-security">Sicherheit</h2>
-<p>Alle Verbindungen der App sind verschlüsselt (HTTPS). Die Verbindung zu unserem Server ist bis zu den Servern von ngrok verschlüsselt; ngrok entschlüsselt sie dort und leitet sie über seinen eigenen verschlüsselten Tunnel an unseren Server weiter, sodass die Systeme von ngrok die Anfragen in lesbarer Form verarbeiten. Ihr Passwort bleibt bei Firebase. Nur wir können uns an unserem Server anmelden, und die Backups, die wir auf unseren eigenen Computer kopieren, liegen auf einer verschlüsselten Festplatte. Kein System ist vollkommen sicher, aber wir schützen Ihre Daten so gut, wie es uns vernünftigerweise möglich ist.</p>
+<p>Alle Verbindungen der App sind verschlüsselt (HTTPS), und die Verbindung zu unserem Server ist bis zu ihm durchgehend verschlüsselt. Versionen der App vor 1.6.0 laufen weiterhin über ngrok, das ihre Verbindung auf seinen Servern entschlüsselt und über seinen eigenen verschlüsselten Tunnel an unseren Server weiterleitet, sodass die Systeme von ngrok diese Anfragen in lesbarer Form verarbeiten. Ihr Passwort bleibt bei Firebase. Nur wir können uns an unserem Server anmelden, und die Backups, die wir auf unseren eigenen Computer kopieren, liegen auf einer verschlüsselten Festplatte. Kein System ist vollkommen sicher, aber wir schützen Ihre Daten so gut, wie es uns vernünftigerweise möglich ist.</p>
 <h2 id="de-retention">Wie lange wir Daten speichern</h2>
 <p>Wir speichern Ihr Konto und Ihre Finanzdaten, bis Sie diese oder Ihr Konto löschen. Alles, was Sie löschen, wird sofort aus unserer Datenbank entfernt.</p>
 <p>Belegfotos, die Sie aufgenommen, aber nicht mit einer Transaktion gespeichert haben, werden gelöscht, sobald sie sieben Tage alt sind, und zwar beim nächsten Mal, wenn sich die App mit unserem Server verbindet.</p>
@@ -320,7 +320,7 @@ ol li { padding-left: 0.2em; }
 </article>
 <article class="lang" id="fr" lang="fr">
 <h1>Politique de confidentialité</h1>
-<p class="updated">Dernière mise à jour : 17 octobre 2026</p>
+<p class="updated">Dernière mise à jour : 22 octobre 2026</p>
 <p>Budgetory est une app de budget personnel pour iPhone et Android. Cette politique explique quelles données personnelles l'app et son serveur utilisent et pourquoi, où vont ces données, combien de temps elles sont conservées et quels sont vos droits.</p>
 <h2 id="fr-controller">Qui est responsable</h2>
 <p>Budgetory est réalisée par Ugurcan&nbsp;Eser, un développeur indépendant établi en Turquie. Il décide de la manière dont vos données personnelles sont utilisées et en est responsable : il est le responsable du traitement (veri sorumlusu au sens de la loi turque sur la protection des données personnelles, la KVKK). Dans cette politique, « nous » le désigne. Vous pouvez le contacter à l'adresse <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
@@ -344,11 +344,11 @@ ol li { padding-left: 0.2em; }
 <p>Si vous activez le verrouillage de l'app, votre appareil vérifie votre visage, votre empreinte digitale, votre code ou votre verrouillage d'écran. L'app apprend uniquement si la vérification a réussi ; rien qui concerne votre visage, votre empreinte digitale ou votre code ne parvient ni à l'app ni à nous.</p>
 <p>Sur Android, Budgetory autorise le système à sauvegarder l'app dans votre compte Google. Une telle sauvegarde peut inclure vos paramètres, votre session de connexion et le résumé du widget, mais pas la copie de vos données ni vos photos. Sur iPhone, les sauvegardes iCloud et sur ordinateur peuvent inclure le résumé du widget. Ces sauvegardes sont conservées pour vous par Google ou Apple ; nous ne pouvons pas y accéder.</p>
 <h2 id="fr-recipients">Qui d'autre reçoit des données</h2>
-<p>Nous utilisons les services suivants pour faire fonctionner Budgetory. Firebase, Hetzner, ngrok et Expo sont nos prestataires : ils traitent des données pour notre compte, uniquement afin de nous fournir leur service.</p>
+<p>Nous utilisons les services suivants pour faire fonctionner Budgetory. Firebase, Hetzner, Expo et, pour les anciennes versions de l'app, ngrok sont nos prestataires : ils traitent des données pour notre compte, uniquement afin de nous fournir leur service.</p>
 <h3 id="fr-firebase">Firebase Authentication (Google)</h3>
 <p>Conserve votre nom, votre adresse e-mail, votre mot de passe et votre identifiant utilisateur, vous connecte, et envoie les e-mails permettant de réinitialiser votre mot de passe ou de confirmer une nouvelle adresse e-mail. Il voit votre adresse IP lorsque l'app le contacte.</p>
 <h3 id="fr-server">Notre serveur</h3>
-<p>La base de données de Budgetory fonctionne sur un serveur privé virtuel situé en Allemagne, que nous louons auprès de Hetzner Online GmbH. L'app y accède par un tunnel géré par ngrok, Inc. Tous deux ne traitent vos données que pour permettre au serveur de fonctionner.</p>
+<p>La base de données de Budgetory fonctionne sur un serveur privé virtuel situé en Allemagne, que nous louons auprès de Hetzner Online GmbH, et l'app s'y connecte directement. Les versions de l'app antérieures à 1.6.0 y accèdent encore par un tunnel géré par ngrok, Inc. Tous deux ne traitent vos données que pour permettre au serveur de fonctionner.</p>
 <h3 id="fr-expo">Mises à jour de l'app (Expo)</h3>
 <p>À chaque démarrage, l'app demande au service de mise à jour d'Expo (EAS Update) si une version plus récente de son code est disponible, afin que les correctifs puissent vous parvenir entre deux versions publiées dans les boutiques d'applications. La requête contient un identifiant aléatoire que l'app crée à cet effet sur votre appareil, la plateforme (iOS ou Android), la version d'exécution (runtime version) de l'app et les identifiants de ses mises à jour actuelles, ainsi que, si l'app n'a pas réussi à démarrer la fois précédente, le texte de l'erreur. Expo utilise l'identifiant pour compter les appareils qu'il dessert, et voit aussi votre adresse IP. La requête ne contient rien sur votre compte ni sur vos chiffres.</p>
 <h3 id="fr-rates">Taux de change</h3>
@@ -366,7 +366,7 @@ ol li { padding-left: 0.2em; }
 <h2 id="fr-not">Ce que nous ne faisons pas</h2>
 <p>Budgetory n'affiche aucune publicité et ne contient aucun outil d'analyse, de suivi ou de rapport de plantage. Nous ne vendons pas vos données, ne les partageons pas à des fins publicitaires et ne les utilisons pas pour établir un profil vous concernant. L'app n'accède ni à vos contacts, ni à votre position, ni à votre micro, et n'utilise l'appareil photo et vos photos que lorsque vous choisissez de prendre ou de sélectionner une photo.</p>
 <h2 id="fr-security">Sécurité</h2>
-<p>Toutes les connexions de l'app sont chiffrées (HTTPS). La connexion à notre serveur est chiffrée jusqu'aux serveurs de ngrok ; ngrok la déchiffre sur place et la transmet à notre serveur par son propre tunnel chiffré, si bien que les systèmes de ngrok traitent les requêtes en clair. Votre mot de passe reste chez Firebase. Nous seuls pouvons nous connecter à notre serveur, et les sauvegardes que nous copions sur notre propre ordinateur sont conservées sur un disque chiffré. Aucun système n'est totalement sûr, mais nous protégeons vos données aussi bien que nous le pouvons raisonnablement.</p>
+<p>Toutes les connexions de l'app sont chiffrées (HTTPS), et la connexion à notre serveur est chiffrée de bout en bout jusqu'à lui. Les versions de l'app antérieures à 1.6.0 passent encore par ngrok, qui déchiffre leur connexion sur ses serveurs et la transmet à notre serveur par son propre tunnel chiffré, si bien que les systèmes de ngrok traitent ces requêtes en clair. Votre mot de passe reste chez Firebase. Nous seuls pouvons nous connecter à notre serveur, et les sauvegardes que nous copions sur notre propre ordinateur sont conservées sur un disque chiffré. Aucun système n'est totalement sûr, mais nous protégeons vos données aussi bien que nous le pouvons raisonnablement.</p>
 <h2 id="fr-retention">Combien de temps nous conservons les données</h2>
 <p>Nous conservons votre compte et vos données financières jusqu'à ce que vous les supprimiez ou que vous supprimiez votre compte. Tout ce que vous supprimez est immédiatement effacé de notre base de données.</p>
 <p>Les photos de reçus que vous avez prises sans les enregistrer avec une transaction sont supprimées au bout de sept jours, lors de la prochaine connexion de l'app à notre serveur.</p>
@@ -389,7 +389,7 @@ ol li { padding-left: 0.2em; }
 </article>
 <article class="lang" id="es" lang="es">
 <h1>Política de privacidad</h1>
-<p class="updated">Última actualización: 17 de octubre de 2026</p>
+<p class="updated">Última actualización: 22 de octubre de 2026</p>
 <p>Budgetory es una app de presupuesto personal para iPhone y Android. Esta política explica qué datos personales usan la app y su servidor y por qué, adónde van esos datos, cuánto tiempo se conservan y cuáles son tus derechos.</p>
 <h2 id="es-controller">Quién es el responsable</h2>
 <p>Budgetory es obra de Ugurcan&nbsp;Eser, un desarrollador individual en Turquía. Él decide cómo se usan tus datos personales y responde de ellos: es el responsable del tratamiento (veri sorumlusu según la Ley turca de Protección de Datos Personales, la KVKK). En esta política, «nosotros» y «nos» se refieren a él. Puedes ponerte en contacto con él en <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
@@ -413,11 +413,11 @@ ol li { padding-left: 0.2em; }
 <p>Si activas el bloqueo de la app, tu dispositivo comprueba tu cara, tu huella, tu código o tu bloqueo de pantalla. La app solo sabe si la comprobación ha salido bien; nada sobre tu cara, tu huella o tu código llega ni a la app ni a nosotros.</p>
 <p>En Android, Budgetory permite que el sistema haga una copia de seguridad de la app en tu cuenta de Google. Esa copia de seguridad puede incluir tus ajustes, tu sesión iniciada y el resumen del widget, pero no la copia de tus datos ni tus fotos. En iPhone, las copias de seguridad en iCloud y en el ordenador pueden incluir el resumen del widget. Google o Apple guardan estas copias de seguridad para ti; nosotros no podemos acceder a ellas.</p>
 <h2 id="es-recipients">Quién más recibe datos</h2>
-<p>Usamos los siguientes servicios para que Budgetory funcione. Firebase, Hetzner, ngrok y Expo son nuestros proveedores de servicios: tratan datos por cuenta nuestra, solo para prestarnos su servicio.</p>
+<p>Usamos los siguientes servicios para que Budgetory funcione. Firebase, Hetzner, Expo y, para las versiones anteriores de la app, ngrok son nuestros proveedores de servicios: tratan datos por cuenta nuestra, solo para prestarnos su servicio.</p>
 <h3 id="es-firebase">Firebase Authentication (Google)</h3>
 <p>Guarda tu nombre, tu dirección de correo electrónico, tu contraseña y tu ID de usuario, inicia tu sesión y envía los correos para restablecer tu contraseña o confirmar una nueva dirección de correo electrónico. Ve tu dirección IP cuando la app se conecta a él.</p>
 <h3 id="es-server">Nuestro servidor</h3>
-<p>La base de datos de Budgetory se ejecuta en un servidor privado virtual en Alemania que alquilamos a Hetzner Online GmbH. La app se conecta a él a través de un túnel gestionado por ngrok, Inc. Ambos manejan tus datos solo para que el servidor pueda funcionar.</p>
+<p>La base de datos de Budgetory se ejecuta en un servidor privado virtual en Alemania que alquilamos a Hetzner Online GmbH, y la app se conecta a él directamente. Las versiones de la app anteriores a la 1.6.0 todavía se conectan a través de un túnel gestionado por ngrok, Inc. Ambos manejan tus datos solo para que el servidor pueda funcionar.</p>
 <h3 id="es-expo">Actualizaciones de la app (Expo)</h3>
 <p>Cada vez que se inicia, la app pregunta al servicio de actualizaciones de Expo (EAS Update) si hay disponible una versión más reciente de su código, para que las correcciones puedan llegarte entre las versiones publicadas en las tiendas de aplicaciones. La solicitud contiene un identificador aleatorio que la app crea en tu dispositivo con este fin, la plataforma (iOS o Android), la versión de ejecución (runtime version) de la app y los identificadores de sus actualizaciones actuales y, si la app no pudo iniciarse la última vez, el texto del error. Expo usa el identificador para contar los dispositivos a los que presta servicio, y también ve tu dirección IP. La solicitud no contiene nada sobre tu cuenta ni sobre tus cifras.</p>
 <h3 id="es-rates">Tipos de cambio</h3>
@@ -435,7 +435,7 @@ ol li { padding-left: 0.2em; }
 <h2 id="es-not">Lo que no hacemos</h2>
 <p>Budgetory no muestra anuncios ni contiene herramientas de análisis, de seguimiento ni de informes de fallos. No vendemos tus datos, no los compartimos con fines publicitarios ni los usamos para crear un perfil sobre ti. La app no accede a tus contactos, tu ubicación ni tu micrófono, y solo usa la cámara y tus fotos cuando decides tomar o elegir una foto.</p>
 <h2 id="es-security">Seguridad</h2>
-<p>Todas las conexiones de la app están cifradas (HTTPS). La conexión con nuestro servidor está cifrada hasta los servidores de ngrok; allí ngrok la descifra y la reenvía a nuestro servidor por su propio túnel cifrado, de modo que los sistemas de ngrok manejan las solicitudes en forma legible. Tu contraseña se queda en Firebase. Solo nosotros podemos iniciar sesión en nuestro servidor, y las copias de seguridad que pasamos a nuestro propio ordenador se guardan en un disco cifrado. Ningún sistema es completamente seguro, pero protegemos tus datos lo mejor que razonablemente podemos.</p>
+<p>Todas las conexiones de la app están cifradas (HTTPS), y la conexión con nuestro servidor está cifrada de principio a fin. Las versiones de la app anteriores a la 1.6.0 todavía pasan por ngrok, que descifra su conexión en sus servidores y la reenvía a nuestro servidor por su propio túnel cifrado, de modo que los sistemas de ngrok manejan esas solicitudes en forma legible. Tu contraseña se queda en Firebase. Solo nosotros podemos iniciar sesión en nuestro servidor, y las copias de seguridad que pasamos a nuestro propio ordenador se guardan en un disco cifrado. Ningún sistema es completamente seguro, pero protegemos tus datos lo mejor que razonablemente podemos.</p>
 <h2 id="es-retention">Cuánto tiempo conservamos los datos</h2>
 <p>Conservamos tu cuenta y tus registros financieros hasta que los elimines o elimines tu cuenta. Todo lo que eliminas se borra de nuestra base de datos de inmediato.</p>
 <p>Las fotos de recibos que tomaste pero no guardaste en una transacción se eliminan una vez que tienen siete días de antigüedad, la próxima vez que la app se conecte a nuestro servidor.</p>
@@ -458,7 +458,7 @@ ol li { padding-left: 0.2em; }
 </article>
 <article class="lang" id="ru" lang="ru">
 <h1>Политика конфиденциальности</h1>
-<p class="updated">Последнее обновление: 17 октября 2026 г.</p>
+<p class="updated">Последнее обновление: 22 октября 2026 г.</p>
 <p>Budgetory — приложение для ведения личного бюджета на iPhone и Android. Эта политика объясняет, какие персональные данные и зачем используют приложение и его сервер, куда эти данные попадают, как долго они хранятся и какие у вас есть права.</p>
 <h2 id="ru-controller">Кто несёт ответственность</h2>
 <p>Budgetory создаёт Ugurcan&nbsp;Eser — частный разработчик из Турции. Он решает, как используются ваши персональные данные, и отвечает за них: он — ответственный за обработку данных, или контролёр (veri sorumlusu по закону Турции о защите персональных данных, KVKK). Слова «мы» и «нас» в этой политике означают его. Связаться с ним можно по адресу <a href="mailto:ugurcaneser@icloud.com">ugurcaneser@icloud.com</a>.</p>
@@ -482,11 +482,11 @@ ol li { padding-left: 0.2em; }
 <p>Если вы включите блокировку приложения, устройство будет проверять ваше лицо, отпечаток пальца, код-пароль или блокировку экрана. Приложение узнаёт только, успешно ли прошла проверка; ничего о вашем лице, отпечатке пальца или код-пароле не попадает ни в приложение, ни к нам.</p>
 <p>На Android Budgetory разрешает системе создавать резервную копию приложения в вашем аккаунте Google. Такая копия может включать ваши настройки, сохранённый вход в аккаунт и сводку виджета, но не копию ваших данных и не ваши фото. На iPhone резервные копии в iCloud и на компьютере могут включать сводку виджета. Эти резервные копии хранят для вас Google или Apple; у нас нет к ним доступа.</p>
 <h2 id="ru-recipients">Кто ещё получает данные</h2>
-<p>Для работы Budgetory мы пользуемся следующими сервисами. Firebase, Hetzner, ngrok и Expo — наши поставщики услуг: они обрабатывают данные по нашему поручению и только для того, чтобы оказывать нам свои услуги.</p>
+<p>Для работы Budgetory мы пользуемся следующими сервисами. Firebase, Hetzner, Expo и, для старых версий приложения, ngrok — наши поставщики услуг: они обрабатывают данные по нашему поручению и только для того, чтобы оказывать нам свои услуги.</p>
 <h3 id="ru-firebase">Firebase Authentication (Google)</h3>
 <p>Хранит ваше имя, адрес электронной почты, пароль и идентификатор пользователя, выполняет вход в ваш аккаунт и отправляет письма для сброса пароля или подтверждения нового адреса электронной почты. Видит ваш IP-адрес, когда приложение к нему обращается.</p>
 <h3 id="ru-server">Наш сервер</h3>
-<p>База данных Budgetory работает на виртуальном выделенном сервере в Германии, который мы арендуем у Hetzner Online GmbH. Приложение подключается к нему через туннель, которым управляет ngrok, Inc. Оба они обрабатывают ваши данные только для того, чтобы сервер мог работать.</p>
+<p>База данных Budgetory работает на виртуальном выделенном сервере в Германии, который мы арендуем у Hetzner Online GmbH, и приложение подключается к нему напрямую. Версии приложения до 1.6.0 по-прежнему подключаются к нему через туннель, которым управляет ngrok, Inc. Оба они обрабатывают ваши данные только для того, чтобы сервер мог работать.</p>
 <h3 id="ru-expo">Обновления приложения (Expo)</h3>
 <p>При каждом запуске приложение спрашивает у сервиса обновлений Expo (EAS Update), есть ли более новая версия его кода, чтобы исправления доходили до вас в промежутках между выпусками в магазинах приложений. В запросе передаются случайный идентификатор, который приложение специально для этого создаёт на вашем устройстве, платформа (iOS или Android), версия среды выполнения приложения (runtime version) и идентификаторы его текущих обновлений, а если в прошлый раз приложение не смогло запуститься, — текст ошибки. Expo использует этот идентификатор, чтобы подсчитывать обслуживаемые устройства, и, кроме того, видит ваш IP-адрес. В запросе нет никаких сведений ни о вашем аккаунте, ни о ваших цифрах.</p>
 <h3 id="ru-rates">Курсы валют</h3>
@@ -504,7 +504,7 @@ ol li { padding-left: 0.2em; }
 <h2 id="ru-not">Чего мы не делаем</h2>
 <p>Budgetory не показывает рекламу и не содержит инструментов аналитики, отслеживания или отправки отчётов о сбоях. Мы не продаём ваши данные, не передаём их для рекламы и не используем их, чтобы составить ваш профиль. Приложение не обращается к вашим контактам, местоположению или микрофону, а камеру и ваши фото использует, только когда вы сами решаете сделать или выбрать фото.</p>
 <h2 id="ru-security">Безопасность</h2>
-<p>Все соединения приложения зашифрованы (HTTPS). Соединение с нашим сервером зашифровано до серверов ngrok; там ngrok расшифровывает его и передаёт дальше на наш сервер по собственному зашифрованному туннелю, поэтому системы ngrok обрабатывают запросы в читаемом виде. Ваш пароль остаётся в Firebase. Входить на наш сервер можем только мы, а резервные копии, которые мы сохраняем на свой компьютер, хранятся на зашифрованном диске. Полностью защищённых систем не бывает, но мы защищаем ваши данные настолько хорошо, насколько это разумно возможно.</p>
+<p>Все соединения приложения зашифрованы (HTTPS), а соединение с нашим сервером зашифровано на всём пути до него. Версии приложения до 1.6.0 по-прежнему идут через ngrok: он расшифровывает их соединение на своих серверах и передаёт дальше на наш сервер по собственному зашифрованному туннелю, поэтому системы ngrok обрабатывают эти запросы в читаемом виде. Ваш пароль остаётся в Firebase. Входить на наш сервер можем только мы, а резервные копии, которые мы сохраняем на свой компьютер, хранятся на зашифрованном диске. Полностью защищённых систем не бывает, но мы защищаем ваши данные настолько хорошо, насколько это разумно возможно.</p>
 <h2 id="ru-retention">Как долго мы храним данные</h2>
 <p>Мы храним ваш аккаунт и записи, пока вы не удалите их или сам аккаунт. Всё, что вы удаляете, сразу же стирается из нашей базы данных.</p>
 <p>Фото чеков, которые вы сделали, но не сохранили вместе с транзакцией, удаляются по прошествии семи дней — при следующем подключении приложения к нашему серверу.</p>
